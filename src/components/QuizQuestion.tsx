@@ -106,23 +106,23 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <button
               onClick={onPrevious}
               disabled={!canGoPrevious}
-              className="flex items-center gap-2 px-6 py-3 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               <ChevronLeft className="w-4 h-4" />
               Previous
             </button>
 
-            <div className="flex items-center gap-4">
-              <div className="text-sm text-gray-500">
+            <div className="flex flex-col sm:flex-row items-center gap-4 order-last sm:order-none">
+              <div className="text-sm text-gray-500 text-center">
                 {selectedAnswer ? 'Answer selected' : 'Select an answer'}
               </div>
               <button
                 onClick={onFinish}
-                className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-colors"
               >
                 <Flag className="w-4 h-4" />
                 Finish Quiz
@@ -132,7 +132,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
             {isLastQuestion ? (
               <button
                 onClick={onFinish}
-                className="flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors"
               >
                 Finish Quiz
               </button>
@@ -140,7 +140,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
               <button
                 onClick={onNext}
                 disabled={!canGoNext}
-                className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white rounded-lg font-semibold disabled:cursor-not-allowed transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white rounded-lg font-semibold disabled:cursor-not-allowed transition-colors"
               >
                 Next
                 <ChevronRight className="w-4 h-4" />
