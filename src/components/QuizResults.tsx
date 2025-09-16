@@ -19,7 +19,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
   const correctAnswers = questions.filter(q => answers[q.index] === q.answer).length;
   const attemptedQuestions = Object.keys(answers).length;
   const percentage = Math.round((correctAnswers / totalQuestions) * 100);
-  
+
   const getScoreColor = (percentage: number) => {
     if (percentage >= 80) return 'text-green-600';
     if (percentage >= 60) return 'text-yellow-600';
@@ -109,65 +109,68 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
             <h2 className="text-xl font-bold text-gray-900">Detailed Review</h2>
             <p className="text-gray-600">Review your answers and see the correct solutions</p>
           </div>
-          
+
           <div className="p-6 space-y-6">
             {questions.map((question, index) => {
               const userAnswer = answers[question.index];
               const isCorrect = userAnswer === question.answer;
-              
+
               return (
                 <div key={question.index} className="border border-gray-200 rounded-lg p-6">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                      isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                    }`}>
+                    <div
+                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                        }`}
+                    >
                       {index + 1}
                     </div>
                     <div className="flex-grow">
                       <h3 className="font-semibold text-gray-900 mb-3">
                         {question.question}
                       </h3>
-                      
+
                       <div className="space-y-2">
-                        {question.options.map((option, optionIndex) => {
-                          let optionClass = 'p-3 rounded-lg border ';
-                          
-                          if (option === question.answer) {
-                            optionClass += 'border-green-300 bg-green-50 text-green-800';
-                          } else if (option === userAnswer && !isCorrect) {
-                            optionClass += 'border-red-300 bg-red-50 text-red-800';
-                          } else {
-                            optionClass += 'border-gray-200 bg-gray-50 text-gray-700';
-                          }
-                          
-                          return (
-                            <div key={optionIndex} className={optionClass}>
+                        {/* If answered correctly → only show the correct option */}
+                        {isCorrect && (
+                          <div className="p-3 rounded-lg border border-green-300 bg-green-50 text-green-800">
+                            <div className="flex items-center justify-between">
+                              <span>{question.answer}</span>
+                              <CheckCircle className="w-4 h-4 text-green-600" />
+                            </div>
+                          </div>
+                        )}
+
+                        {/* If answered wrong → show wrong in red + correct in green */}
+                        {!isCorrect && userAnswer && (
+                          <>
+                            <div className="p-3 rounded-lg border border-red-300 bg-red-50 text-red-800">
                               <div className="flex items-center justify-between">
-                                <span>{option}</span>
-                                <div className="flex gap-1">
-                                  {option === question.answer && (
-                                    <CheckCircle className="w-4 h-4 text-green-600" />
-                                  )}
-                                  {option === userAnswer && !isCorrect && (
-                                    <XCircle className="w-4 h-4 text-red-600" />
-                                  )}
-                                </div>
+                                <span>{userAnswer}</span>
+                                <XCircle className="w-4 h-4 text-red-600" />
                               </div>
                             </div>
-                          );
-                        })}
+                            <div className="p-3 rounded-lg border border-green-300 bg-green-50 text-green-800">
+                              <div className="flex items-center justify-between">
+                                <span>{question.answer}</span>
+                                <CheckCircle className="w-4 h-4 text-green-600" />
+                              </div>
+                            </div>
+                          </>
+                        )}
+
+                        {/* If skipped */}
+                        {!userAnswer && (
+                          <div className="mt-3 p-3 bg-gray-100 rounded-lg text-gray-600 text-sm">
+                            No answer selected
+                          </div>
+                        )}
                       </div>
-                      
-                      {!userAnswer && (
-                        <div className="mt-3 p-3 bg-gray-100 rounded-lg text-gray-600 text-sm">
-                          No answer selected
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
               );
             })}
+
           </div>
         </div>
       </div>

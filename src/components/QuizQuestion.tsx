@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight, Clock, Target, Flag } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, Target, Flag, CheckCircle, XCircle } from 'lucide-react';
 import { Question } from '../types/quiz';
 
 interface QuizQuestionProps {
@@ -42,6 +42,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
     }
     return options;
   }, [question.options, question.index]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-4xl">
@@ -79,30 +80,57 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
           {/* Options */}
           <div className="space-y-3 mb-8">
-            {jumbledOptions.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => onAnswerSelect(option)}
-                className={`w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ${
-                  selectedAnswer === option
-                    ? 'border-blue-500 bg-blue-50 text-blue-900'
-                    : 'border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100 text-gray-700'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <div className={`w-4 h-4 rounded-full border-2 flex-shrink-0 ${
-                    selectedAnswer === option
-                      ? 'border-blue-500 bg-blue-500'
-                      : 'border-gray-300'
-                  }`}>
-                    {selectedAnswer === option && (
-                      <div className="w-full h-full rounded-full bg-white scale-50"></div>
+            {jumbledOptions.map((option, index) => {
+              const isSelected = selectedAnswer === option;
+              const isCorrect = option === question.answer;
+              const isWrongSelected = isSelected && !isCorrect;
+
+              let optionClass =
+                "w-full p-4 text-left rounded-xl border-2 transition-all duration-200 flex items-center justify-between";
+
+              if (isCorrect && selectedAnswer) {
+                optionClass += " border-green-500 bg-green-50 text-green-900";
+              } else if (isWrongSelected) {
+                optionClass += " border-red-500 bg-red-50 text-red-900";
+              } else {
+                optionClass +=
+                  " border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100 text-gray-700";
+              }
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => onAnswerSelect(option)}
+                  disabled={!!selectedAnswer} // disable after answering
+                  className={optionClass}
+                >
+                  <div className="flex items-center gap-3">
+                    <div
+                      className={`w-4 h-4 rounded-full border-2 flex-shrink-0 ${
+                        isCorrect && selectedAnswer
+                          ? "border-green-500 bg-green-500"
+                          : isWrongSelected
+                          ? "border-red-500 bg-red-500"
+                          : "border-gray-300"
+                      }`}
+                    >
+                      {(isCorrect && selectedAnswer) || isWrongSelected ? (
+                        <div className="w-full h-full rounded-full bg-white scale-50"></div>
+                      ) : null}
+                    </div>
+                    <span className="font-medium">{option}</span>
+                  </div>
+                  <div className="flex gap-1">
+                    {isCorrect && selectedAnswer && (
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                    )}
+                    {isWrongSelected && (
+                      <XCircle className="w-4 h-4 text-red-600" />
                     )}
                   </div>
-                  <span className="font-medium">{option}</span>
-                </div>
-              </button>
-            ))}
+                </button>
+              );
+            })}
           </div>
 
           {/* Navigation */}
@@ -118,7 +146,9 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
             <div className="flex flex-col sm:flex-row items-center gap-4 order-last sm:order-none">
               <div className="text-sm text-gray-500 text-center">
-                {selectedAnswer ? 'Answer selected' : 'Select an answer'}
+                {selectedAnswer
+                  ? "Feedback shown, move ahead"
+                  : "Select an answer"}
               </div>
               <button
                 onClick={onFinish}
@@ -132,14 +162,15 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
             {isLastQuestion ? (
               <button
                 onClick={onFinish}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors"
+                disabled={!selectedAnswer}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
               >
                 Finish Quiz
               </button>
             ) : (
               <button
                 onClick={onNext}
-                disabled={!canGoNext}
+                disabled={!canGoNext || !selectedAnswer} // force answer before moving
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white rounded-lg font-semibold disabled:cursor-not-allowed transition-colors"
               >
                 Next

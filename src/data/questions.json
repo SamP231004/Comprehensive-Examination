@@ -2311,6 +2311,61 @@
   },
   {
     "index": 211,
+    "question": "What is the real disadvantage of a linear list of directory entries?",
+    "options": [
+      "size of the linear list in memory",
+      "linear search to find a file",
+      "it is not reliable",
+      "all of the mentioned"
+    ],
+    "answer": "linear search to find a file"
+  },
+  {
+    "index": 212,
+    "question": "What is the postfix form of the following prefix * + a b – c d",
+    "options": [
+      "a b + c d – *",
+      "a b c + * –",
+      "a b + * c d –",
+      "a b + * c d –"
+    ],
+    "answer": "a b + c d – *"
+  },
+  {
+    "index": 213,
+    "question": "What is the name of the process in which an employee informs another responsible employee in the company about potentially unethical behavior?",
+    "options": [
+      "Whistleblowing",
+      "Purging and releasing",
+      "Identification",
+      "Information transfer"
+    ],
+    "answer": "Whistleblowing"
+  },
+  {
+    "index": 214,
+    "question": "What is the level of recursion if the input array is { 4, 8, 32, 58,98,129,201 } and key is 8?",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3"
+  },
+  {
+    "index": 215,
+    "question": "What is the difference is graph traversal and tree:",
+    "options": [
+      "There can be a loop in the graph",
+      "DFS and BFS are the same",
+      "There can’t be a loop in the graph",
+      "DFS and BFD are different"
+    ],
+    "answer": "There can be a loop in the graph"
+  },
+  {
+    "index": 216,
     "question": "What is the current industry for the measure of Software Quality?",
     "options": [
       "Iterations to Successful Build",
@@ -2321,7 +2376,7 @@
     "answer": "Number of Defects per KLOC"
   },
   {
-    "index": 212,
+    "index": 217,
     "question": "What is the function of HTTP?",
     "options": [
       "webserver and browser activity according to command",
@@ -2332,7 +2387,7 @@
     "answer": "webserver and browser activity according to command"
   },
   {
-    "index": 213,
+    "index": 218,
     "question": "What is the complexity of quick sort algorithm, if the array to be sorted is already in sorted order?",
     "options": [
       "O(n2)",
@@ -2343,7 +2398,7 @@
     "answer": "O(n2)"
   },
   {
-    "index": 214,
+    "index": 219,
     "question": "What is split horizon?",
     "options": [
       "Information about a route should not be sent back in the direction from which the original update came.",
@@ -2354,7 +2409,7 @@
     "answer": "Information about a route should not be sent back in the direction from which the original update came."
   },
   {
-    "index": 215,
+    "index": 220,
     "question": "What is Cyclomatic complexity ?",
     "options": [
       "Black box testing",
@@ -2365,7 +2420,7 @@
     "answer": "White box testing"
   },
   {
-    "index": 216,
+    "index": 221,
     "question": "What is Address Binding?",
     "options": [
       "going to an address in memory",
@@ -2376,7 +2431,7 @@
     "answer": "a mapping from one address space to another"
   },
   {
-    "index": 217,
+    "index": 222,
     "question": "What is a network?",
     "options": [
       "A group of 1 or more devices that communicate",
@@ -2387,7 +2442,7 @@
     "answer": "A group of 2 or more devices that communicate"
   },
   {
-    "index": 218,
+    "index": 223,
     "question": "What is a Network Protocol",
     "options": [
       "Formal standards and policies comprised of memes",
@@ -2398,7 +2453,7 @@
     "answer": "Formal standards and policies comprised of rules, procedures and formats"
   },
   {
-    "index": 219,
+    "index": 224,
     "question": "What is a disadvantage of a star network?",
     "options": [
       "It is cheap",
@@ -2409,7 +2464,7 @@
     "answer": "It is expensive"
   },
   {
-    "index": 220,
+    "index": 225,
     "question": "What happens to a task force after it finishes its assignment?",
     "options": [
       "It is integrated with the organisation.",
@@ -2420,7 +2475,7 @@
     "answer": "It is disbanded."
   },
   {
-    "index": 221,
+    "index": 226,
     "question": "What does DPIA expand as?",
     "options": [
       "Data Privacy Impact Assessment",
@@ -2431,7 +2486,7 @@
     "answer": "Data Protection Impact Assessment"
   },
   {
-    "index": 222,
+    "index": 227,
     "question": "What does biometrics have to do with access control?",
     "options": [
       "Authorization",
@@ -2442,7 +2497,7 @@
     "answer": "Authentication"
   },
   {
-    "index": 223,
+    "index": 228,
     "question": "What are the mid values in each level of recursion in the binary search for the input array { 4, 8, 58,98,129,201 } and key 201?",
     "options": [
       "58, 129, 201",
@@ -2453,7 +2508,7 @@
     "answer": "58, 129, 201"
   },
   {
-    "index": 224,
+    "index": 229,
     "question": "What are all candidate keys, other than the primary keys called?",
     "options": [
       "Partial keys",
@@ -2464,7 +2519,7 @@
     "answer": "Alternate keys"
   },
   {
-    "index": 225,
+    "index": 230,
     "question": "What Access Control paradigm was created to deal primarily with computer system information flow?",
     "options": [
       "Lattice-Based",
@@ -2475,7 +2530,7 @@
     "answer": "Lattice-Based"
   },
   {
-    "index": 226,
+    "index": 231,
     "question": "What is another way to describe a parent-child relationship?",
     "options": [
       "Has-A",
@@ -2486,7 +2541,7 @@
     "answer": "Is-A"
   },
   {
-    "index": 227,
+    "index": 232,
     "question": "Virtual memory technique facilitates sharing of memory among",
     "options": [
       "processes",
@@ -2497,7 +2552,7 @@
     "answer": "processes"
   },
   {
-    "index": 228,
+    "index": 233,
     "question": "Unity of command means:",
     "options": [
       "Parity of authority and responsibility",
@@ -2508,7 +2563,7 @@
     "answer": "The flow of command from superior to a subordinate"
   },
   {
-    "index": 229,
+    "index": 234,
     "question": "Unit testing is done by__________________?",
     "options": [
       "Users",
@@ -2519,7 +2574,7 @@
     "answer": "Developers"
   },
   {
-    "index": 230,
+    "index": 235,
     "question": "Triple Bottom Line reporting refers to:",
     "options": [
       "using a low, medium, and high estimates for profitability forecasts.",
@@ -2530,7 +2585,7 @@
     "answer": "measuring the social, environmental, and financial performance of the firm."
   },
   {
-    "index": 231,
+    "index": 236,
     "question": "Transfer time is ...",
     "options": [
       "the time is taken to locate the disk arm to a specified track where the data is to be read or write.",
@@ -2541,7 +2596,7 @@
     "answer": "the time to transfer the data."
   },
   {
-    "index": 232,
+    "index": 237,
     "question": "Traits or skills on which leaders differ from non-leaders include:",
     "options": [
       "Honesty and integrity",
@@ -2552,7 +2607,7 @@
     "answer": "All the other options are correct"
   },
   {
-    "index": 233,
+    "index": 238,
     "question": "Trait theory ignores ________.",
     "options": [
       "the physical traits of leaders.",
@@ -2563,7 +2618,7 @@
     "answer": "the interactions of leaders and their group members as well as situational factors."
   },
   {
-    "index": 234,
+    "index": 239,
     "question": "Total number of levels in DFD",
     "options": [
       "1",
@@ -2574,7 +2629,7 @@
     "answer": "3"
   },
   {
-    "index": 235,
+    "index": 240,
     "question": "Total Development in programmer months of Utility programs",
     "options": [
       "TDEV=2.5xPM pow 0.38",
@@ -2585,7 +2640,7 @@
     "answer": "TDEV=2.5xPM pow0.35"
   },
   {
-    "index": 236,
+    "index": 241,
     "question": "Total Development in programmer months of Systems programs",
     "options": [
       "TDEV=2.5xPM pow 0.38",
@@ -2596,7 +2651,7 @@
     "answer": "TDEV=2.5xPM pow0.32"
   },
   {
-    "index": 237,
+    "index": 242,
     "question": "Total bits for a direct-mapped cache with data of 16 KB and blocks of 4-word, assuming a 32-bit address are",
     "options": [
       "143K",
@@ -2607,7 +2662,7 @@
     "answer": "147K"
   },
   {
-    "index": 238,
+    "index": 243,
     "question": "To read and write from a file we are using the standard C++ library called",
     "options": [
       "Fstream",
@@ -2618,7 +2673,7 @@
     "answer": "Fstream"
   },
   {
-    "index": 239,
+    "index": 244,
     "question": "To make a process as Zombie, which process needs to delay (sleep()) its execution? The parent process or the child process?",
     "options": [
       "parent to sleep for a while, child normal execution",
@@ -2629,7 +2684,7 @@
     "answer": "parent to sleep for a while, child normal execution"
   },
   {
-    "index": 240,
+    "index": 245,
     "question": "To help the operating system estimate LRU, many processors provide a",
     "options": [
       "Use bit",
@@ -2640,7 +2695,7 @@
     "answer": "Reference bit"
   },
   {
-    "index": 241,
+    "index": 246,
     "question": "To create a dynamic record which is better?",
     "options": [
       "Stack",
@@ -2651,7 +2706,7 @@
     "answer": "Linked list"
   },
   {
-    "index": 242,
+    "index": 247,
     "question": "To avoid the race condition, the number of processes that may be simultaneously inside their critical section is",
     "options": [
       "8",
@@ -2662,7 +2717,7 @@
     "answer": "1"
   },
   {
-    "index": 243,
+    "index": 248,
     "question": "Time Oriented Diagram",
     "options": [
       "class Diagram",
@@ -2673,7 +2728,7 @@
     "answer": "Sequence Diagram"
   },
   {
-    "index": 244,
+    "index": 249,
     "question": "Through this principle of management, Henri Fayol guides the managers to exhibit exemplary behaviour and advises that they should not fall into the temptation of misusing their powers for personal benefit at the cost of the general interest of the organization. Which principle of management is being described in the above statement?",
     "options": [
       "Remuneration of employees",
@@ -2684,7 +2739,7 @@
     "answer": "Subordination of individual interest to general interest"
   },
   {
-    "index": 245,
+    "index": 250,
     "question": "Threat to confidentiality is .....",
     "options": [
       "DDoS",
@@ -2695,7 +2750,7 @@
     "answer": "Malware"
   },
   {
-    "index": 246,
+    "index": 251,
     "question": "Thomas Tharakan expects his employees to \"check their brains at the door.\" He does all the thinking, makes all the decisions, and issues commands to his subordinates. Thomas uses the ________style of leadership.",
     "options": [
       "autocratic",
@@ -2706,7 +2761,7 @@
     "answer": "autocratic"
   },
   {
-    "index": 247,
+    "index": 252,
     "question": "This technique of scientific management helps in the development of the concept of the assembly line, which is widely used in automobile companies these days as well. Identify the technique.",
     "options": [
       "Motion study",
@@ -2717,7 +2772,7 @@
     "answer": "Method study"
   },
   {
-    "index": 248,
+    "index": 253,
     "question": "This code would work but is bad practice because",
     "options": [
       "The object attribute is changed by a method",
@@ -2728,7 +2783,7 @@
     "answer": "The object attribute is being changed directly through mainline code (outside of the class/object itself)"
   },
   {
-    "index": 249,
+    "index": 254,
     "question": "There exists a language L. We define a string w such that w belongs to L and w=pqr and |w| >=n for some constant integer n.What can be the maximum length of the substring pq i.e. |pq|<=?",
     "options": [
       "n",
@@ -2739,7 +2794,7 @@
     "answer": "n"
   },
   {
-    "index": 250,
+    "index": 255,
     "question": "There are two abilities that you must have to properly understand ethics. The first is the ……………………. and the second ability is ………………………….",
     "options": [
       "ability to discern; concentration",
@@ -2750,7 +2805,7 @@
     "answer": "ability to distinguish; dedication"
   },
   {
-    "index": 251,
+    "index": 256,
     "question": "There are ____ type’s specializations. They are full specialization and partial specialization",
     "options": [
       "1",
@@ -2761,7 +2816,7 @@
     "answer": "2"
   },
   {
-    "index": 252,
+    "index": 257,
     "question": "Theodore New-Comb’s balance theory is related to",
     "options": [
       "Leadership",
@@ -2772,7 +2827,7 @@
     "answer": "Group formation"
   },
   {
-    "index": 253,
+    "index": 258,
     "question": "The word ______ refers to the portion of a _______ that carries a transmission.",
     "options": [
       "line; channel",
@@ -2783,7 +2838,7 @@
     "answer": "channel; link"
   },
   {
-    "index": 254,
+    "index": 259,
     "question": "The way the work activities and the departments are organised is called",
     "options": [
       "chain of command.",
@@ -2794,7 +2849,7 @@
     "answer": "chain of command."
   },
   {
-    "index": 255,
+    "index": 260,
     "question": "The view that sees profit maximization as the main objective is known as:",
     "options": [
       "Shareholder theory",
@@ -2805,7 +2860,7 @@
     "answer": "Shareholder theory"
   },
   {
-    "index": 256,
+    "index": 261,
     "question": "The VFS (virtual file system) activates file system-specific operations to handle local requests according to their _____",
     "options": [
       "size",
@@ -2816,7 +2871,7 @@
     "answer": "file system types"
   },
   {
-    "index": 257,
+    "index": 262,
     "question": "The Unix system call to get the size of a page is _________.",
     "options": [
       "pagesize()",
@@ -2827,7 +2882,7 @@
     "answer": "getpagesize()"
   },
   {
-    "index": 258,
+    "index": 263,
     "question": "The University of Michigan studies used the two dimensions of ________ and ________ to study behavioural characteristics of leaders.",
     "options": [
       "employee oriented; production oriented",
@@ -2838,7 +2893,7 @@
     "answer": "employee oriented; production oriented"
   },
   {
-    "index": 259,
+    "index": 264,
     "question": "The universal Turing machine U consists of",
     "options": [
       "1 input tape",
@@ -2849,7 +2904,7 @@
     "answer": "3 input tape"
   },
   {
-    "index": 260,
+    "index": 265,
     "question": "The underlying technology on which the system is built is superseded by new technology is the __________ type of risk",
     "options": [
       "Project",
@@ -2860,18 +2915,16 @@
     "answer": "Product"
   },
   {
-    "index": 261,
+    "index": 266,
     "question": "The two major benefits are improvement in performance and minimization of cost to process the system",
     "options": [
       "True",
-      "False",
-      "",
-      ""
+      "False"
     ],
     "answer": "True"
   },
   {
-    "index": 262,
+    "index": 267,
     "question": "The transformational leadership style",
     "options": [
       "encourages group members to transform themselves into better people.",
@@ -2882,7 +2935,7 @@
     "answer": "encourages and inspires group members to go above and beyond selfish interests and do what is best for the common good of the group."
   },
   {
-    "index": 263,
+    "index": 268,
     "question": "The total number of states required to automate the given regular expression (aa)*(bb)*",
     "options": [
       "4",
@@ -2893,7 +2946,7 @@
     "answer": "5"
   },
   {
-    "index": 264,
+    "index": 269,
     "question": "The three major methods of allocating disk space that are in wide use are _____________",
     "options": [
       "contiguous",
@@ -2904,7 +2957,7 @@
     "answer": "all of the mentioned"
   },
   {
-    "index": 265,
+    "index": 270,
     "question": "The technology is used to analyze and monitor network and information flow traffic_________",
     "options": [
       "Cloud access security brokers (CASBs)",
@@ -2915,7 +2968,7 @@
     "answer": "Network traffic analysis (NTA)"
   },
   {
-    "index": 266,
+    "index": 271,
     "question": "The technique of storing the previously calculated values is called?",
     "options": [
       "Saving value property",
@@ -2926,7 +2979,7 @@
     "answer": "Memoization"
   },
   {
-    "index": 267,
+    "index": 272,
     "question": "The syntax for catching all exceptions in a program is ………….",
     "options": [
       "catch-all(…) { }",
@@ -2937,7 +2990,7 @@
     "answer": "catch(…) { }"
   },
   {
-    "index": 268,
+    "index": 273,
     "question": "The sum of the degrees of all vertices in an undirected graph",
     "options": [
       "2V",
@@ -2948,7 +3001,7 @@
     "answer": "2E"
   },
   {
-    "index": 269,
+    "index": 274,
     "question": "The subtraction of hit rate (1-hit rate) is known as",
     "options": [
       "Hit time",
@@ -2959,7 +3012,7 @@
     "answer": "Miss rate"
   },
   {
-    "index": 270,
+    "index": 275,
     "question": "The structure or format of data is called ___________",
     "options": [
       "Syntax",
@@ -2970,7 +3023,7 @@
     "answer": "Syntax"
   },
   {
-    "index": 271,
+    "index": 276,
     "question": "The stress which is negative in nature and causes mental and physical problems is known as",
     "options": [
       "Eustress",
@@ -2981,7 +3034,7 @@
     "answer": "Distress"
   },
   {
-    "index": 272,
+    "index": 277,
     "question": "The stress that exists for weeks, months, or even years is called",
     "options": [
       "Chronic stress",
@@ -2992,7 +3045,7 @@
     "answer": "Chronic stress"
   },
   {
-    "index": 273,
+    "index": 278,
     "question": "The software cost estimation is done in stages as",
     "options": [
       "Basic COCOMO",
@@ -3003,7 +3056,7 @@
     "answer": "A and B"
   },
   {
-    "index": 274,
+    "index": 279,
     "question": "The single and multi-variable estimation models at different stages of estimation is performed by",
     "options": [
       "Halstead",
@@ -3014,7 +3067,7 @@
     "answer": "COCOMO"
   },
   {
-    "index": 275,
+    "index": 280,
     "question": "The set of all strings over the alphabet {p,q} (including epsilon} is denoted by",
     "options": [
       "(q+p)*",
@@ -3025,7 +3078,7 @@
     "answer": "(q+p)*"
   },
   {
-    "index": 276,
+    "index": 281,
     "question": "The set of all strings over the alphabet {a,b} (including epsilon} is denoted by",
     "options": [
       "(a+b)^+",
@@ -3036,7 +3089,7 @@
     "answer": "(a+b)*"
   },
   {
-    "index": 277,
+    "index": 282,
     "question": "The semi-detached software is",
     "options": [
       "Development of the GUI",
@@ -3044,10 +3097,10 @@
       "Networking Module",
       "None of the above"
     ],
-    "answer": "Development of the GUI"
+    "answer": "None of the above"
   },
   {
-    "index": 278,
+    "index": 283,
     "question": "The Scalar principle of organisation implies",
     "options": [
       "All authority must be vested to one person",
@@ -3058,7 +3111,7 @@
     "answer": "Line of authority must be clearly defined"
   },
   {
-    "index": 279,
+    "index": 284,
     "question": "The result of evaluating the prefix expression */b+-dacd, where a=3, b=6, c=1, d=5 is",
     "options": [
       "0",
@@ -3069,7 +3122,7 @@
     "answer": "10"
   },
   {
-    "index": 280,
+    "index": 285,
     "question": "The recognizing capabilities of NDFSM and DFSM",
     "options": [
       "must be same",
@@ -3080,7 +3133,7 @@
     "answer": "must be same"
   },
   {
-    "index": 281,
+    "index": 286,
     "question": "The purpose of cache memory in a computer is to",
     "options": [
       "ensure fast booting",
@@ -3091,7 +3144,7 @@
     "answer": "speed up memory cycle time"
   },
   {
-    "index": 282,
+    "index": 287,
     "question": "The project plan sets out",
     "options": [
       "the resources available to the project",
@@ -3102,7 +3155,7 @@
     "answer": "all the above"
   },
   {
-    "index": 283,
+    "index": 288,
     "question": "The process-related to process control, file management, device management, information about system and communication that is requested by any higher level language can be performed by __________",
     "options": [
       "Editors",
@@ -3113,7 +3166,7 @@
     "answer": "System Call"
   },
   {
-    "index": 284,
+    "index": 289,
     "question": "The process of planning starts with clearly laying down of_______________________.",
     "options": [
       "Policies",
@@ -3124,7 +3177,7 @@
     "answer": "Goals and Objectives"
   },
   {
-    "index": 285,
+    "index": 290,
     "question": "The process of perceiving the causes of behavior and outcomes is termed as",
     "options": [
       "Perception",
@@ -3135,7 +3188,7 @@
     "answer": "Attribution"
   },
   {
-    "index": 286,
+    "index": 291,
     "question": "The process of accessing data stored in a serial access memory is similar to manipulating data on a ________",
     "options": [
       "Heap",
@@ -3146,7 +3199,7 @@
     "answer": "Stack"
   },
   {
-    "index": 287,
+    "index": 292,
     "question": "The process model that represents a way of thinking that allows businesses and team members to quickly innovate and respond to the dynamic demands of an Organization is",
     "options": [
       "Waterfall Model",
@@ -3157,7 +3210,7 @@
     "answer": "Agile Model"
   },
   {
-    "index": 288,
+    "index": 293,
     "question": "The process by which an individual gives meaning to the environment is called",
     "options": [
       "Perception",
@@ -3168,7 +3221,7 @@
     "answer": "Perception"
   },
   {
-    "index": 289,
+    "index": 294,
     "question": "The primary or first component of DFD is known as",
     "options": [
       "Process",
@@ -3179,7 +3232,7 @@
     "answer": "Entity"
   },
   {
-    "index": 290,
+    "index": 295,
     "question": "The postfix form of A*B+C/D is?",
     "options": [
       "*AB/CD+",
@@ -3190,7 +3243,7 @@
     "answer": "AB*CD/+"
   },
   {
-    "index": 291,
+    "index": 296,
     "question": "The postfix form of A*B+C/D is",
     "options": [
       "*AB/CD+",
@@ -3201,7 +3254,7 @@
     "answer": "AB*CD/+"
   },
   {
-    "index": 292,
+    "index": 297,
     "question": "The policy for memory hierarchies: L1 data are never found in an L2 cache, refers to",
     "options": [
       "Write buffer",
@@ -3212,7 +3265,7 @@
     "answer": "Multilevel exclusion"
   },
   {
-    "index": 293,
+    "index": 298,
     "question": "The pager is concerned with the",
     "options": [
       "individual page of a process",
@@ -3223,7 +3276,7 @@
     "answer": "individual page of a process"
   },
   {
-    "index": 294,
+    "index": 299,
     "question": "The page table contains",
     "options": [
       "base address of each page in physical memory",
@@ -3234,7 +3287,7 @@
     "answer": "base address of each page in physical memory"
   },
   {
-    "index": 295,
+    "index": 300,
     "question": "The page replacement algorithm that suffers highly from Belady's anamoly is",
     "options": [
       "Least Recently Used",
@@ -3245,7 +3298,7 @@
     "answer": "First In First Out"
   },
   {
-    "index": 296,
+    "index": 301,
     "question": "The output of the requirement analysis and the requirement specification is used as the input for writing ____________",
     "options": [
       "User Acceptance Test Cases",
@@ -3256,7 +3309,7 @@
     "answer": "User Acceptance Test Cases"
   },
   {
-    "index": 297,
+    "index": 302,
     "question": "The output of the below program will be #include <stdio.h> #include <string.h> main(){ char Be[16]=\"Positive\"; char Positive[16]=\"Be \"; printf(\"%s\", strcpy(Positive, strcat(Positive,Be))); }",
     "options": [
       "a. Be Positive",
@@ -3267,7 +3320,7 @@
     "answer": "a. Be Positive"
   },
   {
-    "index": 298,
+    "index": 303,
     "question": "The operation for adding an entry to a stack is traditionally called :",
     "options": [
       "add",
@@ -3278,7 +3331,7 @@
     "answer": "push"
   },
   {
-    "index": 299,
+    "index": 304,
     "question": "The objective of this technique of scientific management is to reduce a given line or a product to fixed type sizes and characteristics. Name the technique.",
     "options": [
       "Method study",
@@ -3289,7 +3342,7 @@
     "answer": "Standardization and simplification of work"
   },
   {
-    "index": 300,
+    "index": 305,
     "question": "The number of states in DFA is --------than the number of states in NFA for the same Language.",
     "options": [
       "greater equal",
@@ -3300,7 +3353,7 @@
     "answer": "greater equal"
   },
   {
-    "index": 301,
+    "index": 306,
     "question": "The number of states in a machine M recognizing L1UL2 will be __________________ where n is the number of states in M1 and m is the number of states in M2 .",
     "options": [
       "m+n",
@@ -3308,10 +3361,10 @@
       "m+n+1",
       "n-m"
     ],
-    "answer": "m+n"
+    "answer": "m+n+1"
   },
   {
-    "index": 302,
+    "index": 307,
     "question": "The number of comparisons required in the Linear search algorithm, if the search element is not present in the array,",
     "options": [
       "n+1",
@@ -3322,7 +3375,7 @@
     "answer": "n"
   },
   {
-    "index": 303,
+    "index": 308,
     "question": "The number of auxiliary memory required for a Push Down Machine (PDM) to behave like a Finite State Machine (FSM) is",
     "options": [
       "1",
@@ -3333,18 +3386,16 @@
     "answer": "0"
   },
   {
-    "index": 304,
+    "index": 309,
     "question": "The necessity of cost-benefit analysis in PM is to have a systemic approach to identify the pluses and minuses of various paths through a project",
     "options": [
       "True",
-      "False",
-      "",
-      ""
+      "False"
     ],
     "answer": "True"
   },
   {
-    "index": 305,
+    "index": 310,
     "question": "The model in which environmental, social, and economic responsibilities are satisfied concurrently is known as ________.",
     "options": [
       "corporate social responsibility",
@@ -3353,5 +3404,2191 @@
       "restoration and revivification"
     ],
     "answer": "corporate social responsibility"
+  },
+  {
+    "index": 311,
+    "question": "The MMU is a",
+    "options": [
+      "Hardware",
+      "Software",
+      "Malware",
+      "None of the given choices"
+    ],
+    "answer": "Hardware"
+  },
+  {
+    "index": 312,
+    "question": "The minimum number of transitions to pass to reach the final state as per the following regular expression is: {0,1}*{1000}",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "7"
+    ],
+    "answer": "4"
+  },
+  {
+    "index": 313,
+    "question": "The minimum number of colors needed to color a graph having n (>3) vertices and 2 edges is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2"
+  },
+  {
+    "index": 314,
+    "question": "The minimum length for strings in the regular expression ( ba* + aab* )* is_________",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "infinite"
+    ],
+    "answer": "0"
+  },
+  {
+    "index": 315,
+    "question": "The minimum standards of ethical behaviour in a firm are based on ________, while higher standards are established by ________.",
+    "options": [
+      "corporate policies; human resources",
+      "co-workers; mission statements",
+      "organizational culture; laws",
+      "laws; corporate leadership"
+    ],
+    "answer": "laws; corporate leadership"
+  },
+  {
+    "index": 316,
+    "question": "The maximum distance between two nodes present in the stack is 1 in the implementation of DFS. (length/edge= 1)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "index": 317,
+    "question": "The maximum distance between two nodes present in the queue is 1 in the implementation of BFS. (length/edge= 1)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "index": 318,
+    "question": "The matrix structure is the correct structure when three conditions are met. Which of the following is one of these three conditions?",
+    "options": [
+      "Pressure exists to share scarce resources across product lines.",
+      "Technical quality is not very important.",
+      "The environmental domain of the organization is simple.",
+      "The environmental domain of the organization is certain and stable."
+    ],
+    "answer": "Pressure exists to share scarce resources across product lines."
+  },
+  {
+    "index": 319,
+    "question": "The management of business activities that is conducted in more than one country is called:",
+    "options": [
+      "domestic management.",
+      "altruistic management.",
+      "comparative management.",
+      "international management."
+    ],
+    "answer": "international management."
+  },
+  {
+    "index": 320,
+    "question": "The logical file system maintains structures consisting of information about a file...",
+    "options": [
+      "Program counter",
+      "file control block",
+      "Process control block",
+      "file pointer"
+    ],
+    "answer": "file control block"
+  },
+  {
+    "index": 321,
+    "question": "The lexical analysis for a modern language such as Java needs the power of which one of the following machine models in a necessary and sufficient sense?",
+    "options": [
+      "Finite state automata",
+      "Non-deterministic pushdown automata",
+      "Deterministic pushdown automata",
+      "Turing machine"
+    ],
+    "answer": "Finite state automata"
+  },
+  {
+    "index": 322,
+    "question": "The Lattice-Based Access Control paradigm was created primarily to address _____.",
+    "options": [
+      "Affinity",
+      "Availability",
+      "Confidentiality",
+      "Integrity"
+    ],
+    "answer": "Confidentiality"
+  },
+  {
+    "index": 323,
+    "question": "The language defined by S-->SS is",
+    "options": [
+      "2 l",
+      "2l +1",
+      "2l-1",
+      "Null/Ɛ"
+    ],
+    "answer": "Null/Ɛ"
+  },
+  {
+    "index": 324,
+    "question": "The Knapsack problem where the objective function is to minimize the profit is __",
+    "options": [
+      "Greedy",
+      "Dynamic 0 / 1",
+      "Backtracking",
+      "Branch & Bound 0/1"
+    ],
+    "answer": "Dynamic 0 / 1"
+  },
+  {
+    "index": 325,
+    "question": "The intersection of CFL and regular language",
+    "options": [
+      "Is always regular and context free",
+      "Is always regular",
+      "Need not be regular",
+      "IS always context free"
+    ],
+    "answer": "IS always context free"
+  },
+  {
+    "index": 326,
+    "question": "The interactive transmission of data within a time sharing system may be best suited to",
+    "options": [
+      "simplex lines",
+      "half-duplex lines",
+      "full duplex lines",
+      "diplex-lines"
+    ],
+    "answer": "full duplex lines"
+  },
+  {
+    "index": 327,
+    "question": "The instruct Kernel to do various operations of the calling program and exchange data between the Kernel at the program",
+    "options": [
+      "Shell",
+      "Editors",
+      "System Calls",
+      "Commands"
+    ],
+    "answer": "System Calls"
+  },
+  {
+    "index": 328,
+    "question": "The initial array elements are 1,7,5,2 after which the following operation are performed enqueue(6), enqueue(8), dequeue, dequeue, enqueue(9), enqueue(0). what are the final elements of the array?",
+    "options": [
+      "1,7,5,2,9,0",
+      "1,7,5,2,6,8",
+      "5,2,6,8,9,0",
+      "5,2,9,0,6,8"
+    ],
+    "answer": "5,2,6,8,9,0"
+  },
+  {
+    "index": 329,
+    "question": "The implied, enforced, or felt obligation of managers, acting in their official capacities, to serve or protect the interests of groups other than themselves is known as ________.",
+    "options": [
+      "human resource ethics",
+      "environmental morality",
+      "corporate social responsibility",
+      "business-centred morality"
+    ],
+    "answer": "corporate social responsibility"
+  },
+  {
+    "index": 330,
+    "question": "The idea of developing an initial implementation, getting the user feedback, and evolving it through various versions until an acceptable system is made is",
+    "options": [
+      "Agile Process Model",
+      "Waterfall Process Model",
+      "Incremental Process Model",
+      "RAD Process Model"
+    ],
+    "answer": "Incremental Process Model"
+  },
+  {
+    "index": 331,
+    "question": "The group development stage described as \"Deforming and Mourning\" is",
+    "options": [
+      "Storming",
+      "Norming",
+      "Performing",
+      "Adjourning"
+    ],
+    "answer": "Adjourning"
+  },
+  {
+    "index": 332,
+    "question": "The garbage can model is related to",
+    "options": [
+      "Leadership",
+      "Learning",
+      "Decision making",
+      "Recruitment"
+    ],
+    "answer": "Decision making"
+  },
+  {
+    "index": 333,
+    "question": "The fundamental activity of a process arranged in a linear order of software development paradigm is",
+    "options": [
+      "Spiral model",
+      "Big Bang model",
+      "V-model",
+      "Waterfall model"
+    ],
+    "answer": "Waterfall model"
+  },
+  {
+    "index": 334,
+    "question": "The following graph, which is not a topological ordering of the following graph",
+    "options": [
+      "123456",
+      "132456",
+      "324165",
+      "324156"
+    ],
+    "answer": "324165"
+  },
+  {
+    "index": 335,
+    "question": "The following is not a type of organisation structure.",
+    "options": [
+      "Line organisation",
+      "Staff organisation",
+      "Matrix organisation",
+      "Flexible organisation"
+    ],
+    "answer": "Flexible organisation"
+  },
+  {
+    "index": 336,
+    "question": "The five items: A, B, C, D and E are pushed in the stack, one after the other starting from A. The stack is popped into four items and each element is inserted in a queue. Then two elements are deleted from the queue and pushed back on the stack. Now one item is popped from the stack. The popped item is.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "D"
+  },
+  {
+    "index": 337,
+    "question": "The file-position pointer is ___ value that specifies the location in the file as a number of bytes from the file's starting location",
+    "options": [
+      "Integer",
+      "Float",
+      "Null",
+      "None"
+    ],
+    "answer": "Integer"
+  },
+  {
+    "index": 338,
+    "question": "the file system allows the same system call interface (the API) to be used for different types of file systems.",
+    "options": [
+      "NTFS",
+      "EXT2",
+      "VFS(virtual file system)",
+      "DOS"
+    ],
+    "answer": "VFS(virtual file system)"
+  },
+  {
+    "index": 339,
+    "question": "The extent to which a leader lets followers make decisions themselves rather than making the decisions for them are focused on by _______________ leadership styles.",
+    "options": [
+      "Laissez-faire and general",
+      "Participative and autocratic",
+      "Employee-oriented and job-centred",
+      "Laissez-faire and close"
+    ],
+    "answer": "Participative and autocratic"
+  },
+  {
+    "index": 340,
+    "question": "The execution when it finds the solution otherwise starts the problem from the top",
+    "options": [
+      "Backtracking",
+      "Divide and conquer",
+      "Branch and Bound",
+      "Dynamic programming"
+    ],
+    "answer": "Backtracking"
+  },
+  {
+    "index": 341,
+    "question": "The Epsilon-Closure of any state q will contain the state ______________ irrespective of q.",
+    "options": [
+      "Epsilon",
+      "q",
+      "Final state",
+      "p"
+    ],
+    "answer": "q"
+  },
+  {
+    "index": 342,
+    "question": "The entity that has a primary key is",
+    "options": [
+      "weak entity",
+      "Full Entity",
+      "Complete Entity",
+      "Strong Entity"
+    ],
+    "answer": "Strong Entity"
+  },
+  {
+    "index": 343,
+    "question": "The encryption methodology is used in .",
+    "options": [
+      "IDS",
+      "Firewall",
+      "Host",
+      "VPN"
+    ],
+    "answer": "VPN"
+  },
+  {
+    "index": 344,
+    "question": "The employees should be rewarded for their suggestions which results in a substantial reduction in the cost. Which principle of management advocates this?",
+    "options": [
+      "Science, not the rule of thumb",
+      "Co-operation, not individualism",
+      "Harmony, not discord",
+      "Science, not art"
+    ],
+    "answer": "Co-operation, not individualism"
+  },
+  {
+    "index": 345,
+    "question": "The element of role identity which describes how others believe one should behave in a given situation.",
+    "options": [
+      "Role perception",
+      "Role expectation",
+      "Role identification",
+      "Role description"
+    ],
+    "answer": "Role expectation"
+  },
+  {
+    "index": 346,
+    "question": "The element of role identity which describes how an individual is expected to behave according to his own perception in the group is called",
+    "options": [
+      "Role perception",
+      "Role expectation",
+      "Role identification",
+      "Role description"
+    ],
+    "answer": "Role perception"
+  },
+  {
+    "index": 347,
+    "question": "The divisional structure has a special feature of __________________.",
+    "options": [
+      "flexibility.",
+      "reliabilty.",
+      "both flexibility and reliability.",
+      "change."
+    ],
+    "answer": "flexibility."
+  },
+  {
+    "index": 348,
+    "question": "The Directors’ responsibilities are unlikely to include.",
+    "options": [
+      "a fiduciary duty",
+      "a duty to keep proper accounting records",
+      "a duty to propose high dividends for shareholders",
+      "a duty of care"
+    ],
+    "answer": "a duty to propose high dividends for shareholders"
+  },
+  {
+    "index": 349,
+    "question": "The device used to identify fast-spreading threats is ...",
+    "options": [
+      "IDS",
+      "IPS",
+      "Firewall",
+      "VPN"
+    ],
+    "answer": "IPS"
+  },
+  {
+    "index": 350,
+    "question": "The device used to block unauthorized access to your network is ...",
+    "options": [
+      "IDS",
+      "Firewall",
+      "IPS",
+      "VPN"
+    ],
+    "answer": "Firewall"
+  },
+  {
+    "index": 351,
+    "question": "The device used for providing secured remote access is ...",
+    "options": [
+      "IDS",
+      "IPS",
+      "Firewall",
+      "VPN"
+    ],
+    "answer": "VPN"
+  },
+  {
+    "index": 352,
+    "question": "The decision-making in an organic structure is generally",
+    "options": [
+      "decentralised.",
+      "centralised.",
+      "formalised.",
+      "None of the other answers is correct."
+    ],
+    "answer": "decentralised."
+  },
+  {
+    "index": 353,
+    "question": "The DBMS language component which can be embedded in a program is",
+    "options": [
+      "The data definition language(DDL)",
+      "The data manipulation language (DML)",
+      "The database administrator (DBA)",
+      "A query language"
+    ],
+    "answer": "The data manipulation language (DML)"
+  },
+  {
+    "index": 354,
+    "question": "The data transmission on the asynchronous BUS is also referred as ___________",
+    "options": [
+      "Bulk transmission",
+      "Same time transmission",
+      "Switch mode transmission",
+      "Hand-Shake transmission."
+    ],
+    "answer": "Hand-Shake transmission."
+  },
+  {
+    "index": 355,
+    "question": "The data structure required to check whether an expression contains balanced parenthesis is",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Array"
+    ],
+    "answer": "Stack"
+  },
+  {
+    "index": 356,
+    "question": "The Cost benefit analysis evaluates the following benefits",
+    "options": [
+      "Direct costs",
+      "Intangible costs",
+      "Opportunity costs",
+      "None of the above"
+    ],
+    "answer": "None of the above"
+  },
+  {
+    "index": 357,
+    "question": "The control takes place after the action is called as",
+    "options": [
+      "Feed Forward Control",
+      "Concurrent Control",
+      "Feedback Control",
+      "Control measure"
+    ],
+    "answer": "Feedback Control"
+  },
+  {
+    "index": 358,
+    "question": "The Contingency theory focuses on",
+    "options": [
+      "Situational variables",
+      "Interrelationships",
+      "Groups and human behavior",
+      "Economic needs of workers"
+    ],
+    "answer": "Situational variables"
+  },
+  {
+    "index": 359,
+    "question": "The connected graph with n vertices and n edges consists of at least m different spanning trees, what is the largest integer m?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": "3"
+  },
+  {
+    "index": 360,
+    "question": "The concept of ________ has evolved from the traditional view of corporate social responsibility.",
+    "options": [
+      "social scaffolding",
+      "planetary progressivism",
+      "work-life balance",
+      "corporate sustainability"
+    ],
+    "answer": "corporate sustainability"
+  },
+  {
+    "index": 361,
+    "question": "The COCOMO model depends of time factors",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "index": 362,
+    "question": "The cache term is now applied when a buffering is employed for reusing commonly occurring items, for example",
+    "options": [
+      "File caches",
+      "Name cache",
+      "Flash memory",
+      "Both a and b"
+    ],
+    "answer": "Both a and b"
+  },
+  {
+    "index": 363,
+    "question": "The basic limitation of FSM is that",
+    "options": [
+      "all of the comments are true",
+      "it cannot remember arbitrary large amounts of information",
+      "it sometimes fails to recognize grammars that are regular",
+      "it sometimes recognized grammars that are not regular"
+    ],
+    "answer": "it cannot remember arbitrary large amounts of information"
+  },
+  {
+    "index": 364,
+    "question": "The attribute composed of multiple components, each with an independent existence is called",
+    "options": [
+      "Composite attribute",
+      "Simple attribute",
+      "Single valued attribute",
+      "Derived attribute"
+    ],
+    "answer": "Composite attribute"
+  },
+  {
+    "index": 365,
+    "question": "The attribute age can be a",
+    "options": [
+      "Single Valued",
+      "Multi Valued",
+      "Derived",
+      "Composite"
+    ],
+    "answer": "Derived"
+  },
+  {
+    "index": 366,
+    "question": "The assumptions about the future in which the planning is implemented are termed as",
+    "options": [
+      "Boundaries",
+      "Premises",
+      "Limits",
+      "Hypothesis"
+    ],
+    "answer": "Premises"
+  },
+  {
+    "index": 367,
+    "question": "The assignment of individual duties and responsibilities is most appropriately described in which of the following documents?",
+    "options": [
+      "Security policy",
+      "Enforcement guidelines",
+      "Acceptable use policy",
+      "Program manual"
+    ],
+    "answer": "Security policy"
+  },
+  {
+    "index": 368,
+    "question": "The algorithm which chooses the page that has not been used for the longest period of time is _________.",
+    "options": [
+      "First in first out algorithm",
+      "Least recently used algorithm",
+      "Additional reference bit algorithm",
+      "Counting based page replacement algorithm"
+    ],
+    "answer": "Least recently used algorithm"
+  },
+  {
+    "index": 369,
+    "question": "The aim of this process is to develop low-quality software solutions that exceed or meet user expectations within time frame is development life cycle.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "index": 370,
+    "question": "The advantage of pure virtual function than normal virtual function is ………………….",
+    "options": [
+      "It reduces the program code size in terms of number of lines",
+      "It reduces the memory space",
+      "the compiler easily finds syntax error in a program",
+      "the time complexity is linear"
+    ],
+    "answer": "It reduces the program code size in terms of number of lines"
+  },
+  {
+    "index": 371,
+    "question": "The address of a page table in memory is stored in",
+    "options": [
+      "stack pointer",
+      "page table base register",
+      "page register",
+      "program counter"
+    ],
+    "answer": "page table base register"
+  },
+  {
+    "index": 372,
+    "question": "The address generated by the CPU is referred to as ____________",
+    "options": [
+      "Physical address",
+      "Logical address",
+      "Neither physical nor logical",
+      "Network Address"
+    ],
+    "answer": "Logical address"
+  },
+  {
+    "index": 373,
+    "question": "The actual count of elements associated with the connectivity is called __________ of the relationship connectivity.",
+    "options": [
+      "Cardinality",
+      "Entity type",
+      "Entity set",
+      "None of these"
+    ],
+    "answer": "Cardinality"
+  },
+  {
+    "index": 374,
+    "question": "The access mode of Magnetc Disk is",
+    "options": [
+      "Sequential access",
+      "Random access",
+      "Associative access",
+      "SemiRandom access"
+    ],
+    "answer": "Random access"
+  },
+  {
+    "index": 375,
+    "question": "The ability to temporarily halt the CPU and use this time to send information on buses is called",
+    "options": [
+      "Direct memory access",
+      "Vectoring the interrupt",
+      "System Interrupt",
+      "Cycle stealing"
+    ],
+    "answer": "Cycle stealing"
+  },
+  {
+    "index": 376,
+    "question": "The ___________ must design and program the overlay structure.",
+    "options": [
+      "programmer",
+      "system architect",
+      "system designer",
+      "system analyst"
+    ],
+    "answer": "programmer"
+  },
+  {
+    "index": 377,
+    "question": "The __________ model defines the stored data structures in terms of the database model used.",
+    "options": [
+      "Physical level",
+      "Conceptual level",
+      "External level",
+      "None of these"
+    ],
+    "answer": "Conceptual level"
+  },
+  {
+    "index": 378,
+    "question": "The ________ style of leadership describes a leader who tends to involve employees in decision making, delegate authority, encourage participation in deciding work methods and goals, and uses feedback as an opportunity for coaching employees.",
+    "options": [
+      "participative",
+      "autocratic",
+      "democratic",
+      "laissez-faire"
+    ],
+    "answer": "democratic"
+  },
+  {
+    "index": 379,
+    "question": "The _______ theory states a manager’s choice of organizational structures and control systems depends on the characteristics of the external environment.",
+    "options": [
+      "Mechanistic",
+      "Management science",
+      "Organic",
+      "Contingency"
+    ],
+    "answer": "Contingency"
+  },
+  {
+    "index": 380,
+    "question": "The ______ technique expands the bandwidth of a signal by replacing each data bit with n bits.",
+    "options": [
+      "DSSS",
+      "FHSS",
+      "FDM",
+      "TDM"
+    ],
+    "answer": "DSSS"
+  },
+  {
+    "index": 381,
+    "question": "The \"means\" of leadership involve",
+    "options": [
+      "getting results through others.",
+      "the ability to build cohesive, goal-oriented teams.",
+      "the process of influencing an organized group toward accomplishing its goals",
+      "the process of forcibly making others comply.."
+    ],
+    "answer": "the process of influencing an organized group toward accomplishing its goals"
+  },
+  {
+    "index": 382,
+    "question": "The Simple Security Condition requires that a subject S can read an object O only if _____and any DAC permits",
+    "options": [
+      "Is > Io",
+      "LO ≤ LS",
+      "L0≤ LS",
+      "Is ≤ Io"
+    ],
+    "answer": "L0≤ LS"
+  },
+  {
+    "index": 383,
+    "question": "The number of subordinates a superior can effectively handle is called",
+    "options": [
+      "Organising people",
+      "Span of control",
+      "Direction",
+      "Coordination"
+    ],
+    "answer": "Span of control"
+  },
+  {
+    "index": 384,
+    "question": "The easiest form of offline password hash attack which can be used for capturing insecure passwords is?",
+    "options": [
+      "Hybrid",
+      "Dictionary",
+      "Brute-force",
+      "Man-in-the-middle"
+    ],
+    "answer": "Dictionary"
+  },
+  {
+    "index": 385,
+    "question": "The -------------- access control model in which users are not given much freedom to decide who can access their files and is recognized for its structure and use of security labels?",
+    "options": [
+      "Discretionary",
+      "Mandatory",
+      "Role-based",
+      "Nondiscretionary"
+    ],
+    "answer": "Mandatory"
+  },
+  {
+    "index": 386,
+    "question": "That an enterprise must behave as a good citizen is an example of its responsibility towards:",
+    "options": [
+      "owners.",
+      "workers.",
+      "consumers.",
+      "community."
+    ],
+    "answer": "community."
+  },
+  {
+    "index": 387,
+    "question": "Thackeray Manufacturing recently developed a code of ethics. Which of the following topics is most likely covered in the document?",
+    "options": [
+      "business conduct",
+      "fair competition",
+      "HR issues",
+      "All the other answers are correct"
+    ],
+    "answer": "All the other answers are correct"
+  },
+  {
+    "index": 388,
+    "question": "Testing the end to end functionality of the system as a whole is defined as _______________",
+    "options": [
+      "Unit Testing",
+      "Functional Testing",
+      "Stress Testing",
+      "Load Testing"
+    ],
+    "answer": "Functional Testing"
+  },
+  {
+    "index": 389,
+    "question": "Templates ___ some common errors found in code that makes heavy use of function-like macros",
+    "options": [
+      "Reject",
+      "Allow",
+      "Discard",
+      "None"
+    ],
+    "answer": "Reject"
+  },
+  {
+    "index": 390,
+    "question": "Template uses ___ keyword?",
+    "options": [
+      "class",
+      "typename",
+      "both class & typename",
+      "function"
+    ],
+    "answer": "both class & typename"
+  },
+  {
+    "index": 391,
+    "question": "Template creates___ versions of a function at run time",
+    "options": [
+      "Similar",
+      "Different",
+      "None",
+      "Both similar and different"
+    ],
+    "answer": "Both similar and different"
+  },
+  {
+    "index": 392,
+    "question": "Template classes and functions ____ the code duplication of different data types and thus makes the development easier and faster.",
+    "options": [
+      "Allow",
+      "Eliminate",
+      "Permit",
+      "None"
+    ],
+    "answer": "Eliminate"
+  },
+  {
+    "index": 393,
+    "question": "TCP/IP MODEL DOES NOT HAVE ______ LAYER BUT OSI MODEL HAVE THIS LAYER.",
+    "options": [
+      "SESSION LAYER",
+      "PRESENTATION LAYER",
+      "APPLICATION LAYER",
+      "Both Session and Presentation layer"
+    ],
+    "answer": "Both Session and Presentation layer"
+  },
+  {
+    "index": 394,
+    "question": "Tangible premises in planning doesn’t include",
+    "options": [
+      "capital investment",
+      "Unit of production",
+      "Cost per unit",
+      "Goodwill"
+    ],
+    "answer": "Goodwill"
+  },
+  {
+    "index": 395,
+    "question": "Synchronous and Asynchronous data transfer classification is based on ______________",
+    "options": [
+      "Time at which data transfer happens",
+      "Type of data transfer occurs",
+      "Type of devices connected to them",
+      "None of the mentioned options"
+    ],
+    "answer": "Time at which data transfer happens"
+  },
+  {
+    "index": 396,
+    "question": "Suppose the following disk request sequence (track numbers) for a disk with 100 tracks is given: 45, 20, 90, 10, 50, 60, 80, 25, 70. Assume that the initial position of the R/W head is on track 50. The additional distance that will be traversed by the R/W head when the Shortest Seek Time First (SSTF) algorithm is used compared to the SCAN (Elevator) algorithm (assuming that SCAN algorithm moves towards 100 when it starts execution) is _________ tracks",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "answer": "10"
+  },
+  {
+    "index": 397,
+    "question": "Suppose that a system has a paging system with 8 entries in a page table. Given that there are three processes of equal sizes, creating 8 valid entries in their page tables. What would be the total number of frames allocated to these three processes under the condition that 2 pages are shared by the three processes?",
+    "options": [
+      "24",
+      "20",
+      "18",
+      "30"
+    ],
+    "answer": "20"
+  },
+  {
+    "index": 398,
+    "question": "Suppose a disk has 201 cylinders, numbered from 0 to 200. At some time the disk arm is at cylinder 100, and there is a queue of disk access requests for cylinders 30, 85, 90, 100, 105, 110, 135 and 145. If Shortest-Seek Time First (SSTF) is being used for scheduling the disk access, the request for cylinder 90 is serviced after servicing ____________ number of requests.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2"
+  },
+  {
+    "index": 399,
+    "question": "Supervision of employees is greatly enhanced by having a small span of control, but it is",
+    "options": [
+      "expensive.",
+      "time-consuming.",
+      "resource-consuming.",
+      "complex."
+    ],
+    "answer": "expensive."
+  },
+  {
+    "index": 400,
+    "question": "Stress that usually lasts for short time and may be due to work pressure, meeting deadlines pressure or minor accident, or any related matters is called",
+    "options": [
+      "Chronic stress",
+      "Acute stress",
+      "Negative stress",
+      "Permanent stress"
+    ],
+    "answer": "Acute stress"
+  },
+  {
+    "index": 401,
+    "question": "State true or false.\ni) Unix, support multiple user processes but only support one thread per process.\nA java run time environment is an example of a system of one process with multiple threads.",
+    "options": [
+      "True, False",
+      "True, True",
+      "False, True",
+      "False, False"
+    ],
+    "answer": "False, True"
+  },
+  {
+    "index": 402,
+    "question": "SP 800 series standard are defined by....",
+    "options": [
+      "NIST",
+      "COBIT",
+      "COSO",
+      "ISO"
+    ],
+    "answer": "NIST"
+  },
+  {
+    "index": 403,
+    "question": "Sort out the following virus based on their severity: Resident virus, non-resident virus, boot sector virus, and macro virus",
+    "options": [
+      "Resident virus, non-resident virus, boot sector virus, and macro virus",
+      "Boot sector virus, resident virus, non-resident virus and macro virus",
+      "Boot sector virus, non-resident virus, resident virus and macro virus",
+      "Boot sector virus, non-resident virus, macro virus and resident virus"
+    ],
+    "answer": "Boot sector virus, resident virus, non-resident virus and macro virus"
+  },
+  {
+    "index": 404,
+    "question": "Social responsibility is ______________.",
+    "options": [
+      "the same as legal responsibility.",
+      "broader than legal responsibility.",
+      "narrower than legal responsibility.",
+      "None of the other answers is correct."
+    ],
+    "answer": "broader than legal responsibility."
+  },
+  {
+    "index": 405,
+    "question": "Significant percentage of the spent time in moving data in two levels in the memory hierarchy, then the memory-hierarchy is said to",
+    "options": [
+      "Mixed",
+      "Write stall",
+      "Averaging",
+      "Thrash"
+    ],
+    "answer": "Thrash"
+  },
+  {
+    "index": 406,
+    "question": "Select the output of the following #include <stdio.h> main(){ char arr1[5]=\"apple\"; char arr2[5]=\"apple\"; if (arr1==arr2) printf(\"Same\"); else printf(\"Not Same\"); }",
+    "options": [
+      "a. Same",
+      "a. Not Same",
+      "a. Error",
+      "a. None of these"
+    ],
+    "answer": "a. Not Same"
+  },
+  {
+    "index": 407,
+    "question": "Seek Time is --------",
+    "options": [
+      "the time taken to locate the disk arm to a specified track where the data is to be read or write.",
+      "the time taken by the desired sector of disk to rotate into a position so that it can access the read/write heads",
+      "the time to transfer the data.",
+      "the time is taken to complete the execution."
+    ],
+    "answer": "the time taken to locate the disk arm to a specified track where the data is to be read or write."
+  },
+  {
+    "index": 408,
+    "question": "SDLC stands for",
+    "options": [
+      "Software Development Life Cycle",
+      "System Development Life cycle",
+      "Software Design Life Cycle",
+      "System Design Life Cycle"
+    ],
+    "answer": "Software Development Life Cycle"
+  },
+  {
+    "index": 409,
+    "question": "Scientific Management is related to",
+    "options": [
+      "Elton Mayo",
+      "Henry Fayol",
+      "F W Taylor",
+      "Max Weber"
+    ],
+    "answer": "F W Taylor"
+  },
+  {
+    "index": 410,
+    "question": "Scalar chain is a",
+    "options": [
+      "Leadership chain",
+      "Authority chain",
+      "Decision making chain",
+      "Control chain"
+    ],
+    "answer": "Authority chain"
+  },
+  {
+    "index": 411,
+    "question": "Sanjana works as a production supervisor, and she believes one of her subordinates is drinking during his lunch break. Sanjana’s employer does not have a specific rule regarding the subordinate's behaviour. Which of the following would most likely assist Sanjana with her problem in this situation?",
+    "options": [
+      "corporate code of ethics",
+      "corporate vision statement",
+      "corporate code of conduct",
+      "labour legislation"
+    ],
+    "answer": "corporate code of conduct"
+  },
+  {
+    "index": 412,
+    "question": "RTM stands for ____________",
+    "options": [
+      "Repeated Trade Matrix",
+      "Redundant Trace Module",
+      "Robust Test Mechanism",
+      "Requirement traceability matrix"
+    ],
+    "answer": "Requirement traceability matrix"
+  },
+  {
+    "index": 413,
+    "question": "Routing is performed by ________ in OSI architecture",
+    "options": [
+      "network layer",
+      "data link layer",
+      "transport layer",
+      "session layer"
+    ],
+    "answer": "network layer"
+  },
+  {
+    "index": 414,
+    "question": "Rotational Latency is ---",
+    "options": [
+      "the time is taken to locate the disk arm to a specified track where the data is to be read or write.",
+      "the time taken by the desired sector of disk to rotate into a position so that it can access the read/write heads.",
+      "the time to transfer the data.",
+      "the time is taken to complete the execution."
+    ],
+    "answer": "the time taken by the desired sector of disk to rotate into a position so that it can access the read/write heads."
+  },
+  {
+    "index": 415,
+    "question": "Reverse polish notation is used by",
+    "options": [
+      "Stack",
+      "Queue",
+      "Linked list",
+      "All of these"
+    ],
+    "answer": "Stack"
+  },
+  {
+    "index": 416,
+    "question": "Return type of is_open() function is ___",
+    "options": [
+      "int",
+      "bool",
+      "float",
+      "char *"
+    ],
+    "answer": "bool"
+  },
+  {
+    "index": 417,
+    "question": "Resource allocation graph can be used to avoid deadlock for 'n' processes",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes"
+  },
+  {
+    "index": 418,
+    "question": "Requirement of two pointer is not mandatory in",
+    "options": [
+      "Stack",
+      "Queue",
+      "Linked list",
+      "All of these"
+    ],
+    "answer": "Stack"
+  },
+  {
+    "index": 419,
+    "question": "Relationship set in ER diagram",
+    "options": [
+      "Divided Rectangle",
+      "Non Divided Rectangle",
+      "Line",
+      "Diamond"
+    ],
+    "answer": "Diamond"
+  },
+  {
+    "index": 420,
+    "question": "Relations produced by ER model will always be in",
+    "options": [
+      "1 NF",
+      "2 NF",
+      "3 NF",
+      "4 NF"
+    ],
+    "answer": "1 NF"
+  },
+  {
+    "index": 421,
+    "question": "Relation between two different function with two constant are applicable in",
+    "options": [
+      "F(n)=O(g(n))",
+      "F(n)=θ(g(n))",
+      "F(n)=Ώ(g(n))",
+      "All of them"
+    ],
+    "answer": "F(n)=θ(g(n))"
+  },
+  {
+    "index": 422,
+    "question": "Related to Fibonacci sequence, which of the following is more appropriate.",
+    "options": [
+      "Integer sequence",
+      "Irrational number",
+      "Both are true",
+      "None is correct"
+    ],
+    "answer": "Integer sequence"
+  },
+  {
+    "index": 423,
+    "question": "Regular expressions that do not contain the star operator can represent only finite languages",
+    "options": [
+      "True",
+      "False",
+      "Can't determined",
+      "Neither True and Nor False"
+    ],
+    "answer": "True"
+  },
+  {
+    "index": 424,
+    "question": "Regular Expression recognizes --------grammars",
+    "options": [
+      "type-1",
+      "type-2",
+      "type-3",
+      "type-0"
+    ],
+    "answer": "type-3"
+  },
+  {
+    "index": 425,
+    "question": "Recursion fails due to fixed size",
+    "options": [
+      "Linked list",
+      "Queue",
+      "Stack",
+      "All of these"
+    ],
+    "answer": "Stack"
+  },
+  {
+    "index": 426,
+    "question": "Random access memories are useful in applications where",
+    "options": [
+      "Data consists of numbers",
+      "Short access time is required",
+      "Each stored word is processed differently",
+      "Data naturally needs to flow in and out in serial form"
+    ],
+    "answer": "Short access time is required"
+  },
+  {
+    "index": 427,
+    "question": "Queues serve a major role in",
+    "options": [
+      "Simulation of recursion",
+      "Simulation of arbitrary linked list",
+      "Simulation of limited resource allocation",
+      "All of these"
+    ],
+    "answer": "Simulation of limited resource allocation"
+  },
+  {
+    "index": 428,
+    "question": "Program always deals with ____________",
+    "options": [
+      "logical address",
+      "absolute address",
+      "physical address",
+      "relative address"
+    ],
+    "answer": "logical address"
+  },
+  {
+    "index": 429,
+    "question": "Prims algorithm is based on",
+    "options": [
+      "Divide and conquer method",
+      "Dynamic programming",
+      "Greedy method",
+      "Branch and bound"
+    ],
+    "answer": "Greedy method"
+  },
+  {
+    "index": 430,
+    "question": "Plan-driven process is a process where all the activities are planned first and the progress is measured against the plan is",
+    "options": [
+      "Agile Process Model",
+      "Waterfall Process Model",
+      "Prototyping Process Model",
+      "RAD Process Model"
+    ],
+    "answer": "Waterfall Process Model"
+  },
+  {
+    "index": 431,
+    "question": "Pharming is an attack which referred to",
+    "options": [
+      "Collecting social data from victim device",
+      "Installing any software or app in victim device",
+      "Attacking victim device",
+      "Attacking victim social network"
+    ],
+    "answer": "Attacking victim device"
+  },
+  {
+    "index": 432,
+    "question": "Persons who can influence others and who possess managerial authority are termed ________.",
+    "options": [
+      "entrepreneurs",
+      "leaders",
+      "managers",
+      "visionaries"
+    ],
+    "answer": "leaders"
+  },
+  {
+    "index": 433,
+    "question": "Periodically adding, changing and deleting file records is called as File?",
+    "options": [
+      "Updating",
+      "Upgrading",
+      "Reconstructing",
+      "Renewing"
+    ],
+    "answer": "Updating"
+  },
+  {
+    "index": 434,
+    "question": "Parallel computing means doing several tasks simultaneously thus improving the performance of the _____.",
+    "options": [
+      "Data system",
+      "Computer system",
+      "Memory",
+      "Vector system"
+    ],
+    "answer": "Computer system"
+  },
+  {
+    "index": 435,
+    "question": "Page fault occurs when the referenced page is",
+    "options": [
+      "not in main memory",
+      "not in secondary memory",
+      "not in tertiary memory",
+      "not in shared memory"
+    ],
+    "answer": "not in main memory"
+  },
+  {
+    "index": 436,
+    "question": "overflow condition was raised by the stack, which of the condition holds false",
+    "options": [
+      "maximum limit exceeds",
+      "top of the stack is reached",
+      "limited stack size",
+      "none of these"
+    ],
+    "answer": "none of these"
+  },
+  {
+    "index": 437,
+    "question": "Output will be #include <stdio.h> int myFunction(int parameter) { return parameter; } main(){ int value=100; printf(\"%d %d\", myFunction(value), myFunction(value+100)); }",
+    "options": [
+      "100 100",
+      "100 200",
+      "Error",
+      "Warning during compilation"
+    ],
+    "answer": "100 200"
+  },
+  {
+    "index": 438,
+    "question": "Output will be #include <stdio.h> #include <string.h> main(){ char Be[16]=\"Positive \"; char Positive[16]=\"Positive \"; printf(\"%d\",strcmp(Be,Positive) ); }",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Error"
+    ],
+    "answer": "0"
+  },
+  {
+    "index": 439,
+    "question": "Output of the given code will be #include <stdio.h> #include <string.h> main(){ char Be[16]=\"Positive \"; char Positive[16]=\"positive \"; printf(\"%d\",strcmp(Be,Positive) ); }",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Error"
+    ],
+    "answer": "-1"
+  },
+  {
+    "index": 440,
+    "question": "Output of the following code will be #include <stdio.h> int myFunction() { return 1; } int myFunction(int a) { return 2; } main(){ printf(\"%d %d\", myFunction(), myFunction(1)); }",
+    "options": [
+      "1 1",
+      "1 2",
+      "2 2",
+      "Error"
+    ],
+    "answer": "1 2"
+  },
+  {
+    "index": 441,
+    "question": "Operating System maintains the page table for",
+    "options": [
+      "each process",
+      "each thread",
+      "each instruction",
+      "each address"
+    ],
+    "answer": "each process"
+  },
+  {
+    "index": 442,
+    "question": "Open mail relays are",
+    "options": [
+      "Mail user agent",
+      "Mail transfer agent",
+      "Mail delivers agent",
+      "Internet mail extension"
+    ],
+    "answer": "Mail transfer agent"
+  },
+  {
+    "index": 443,
+    "question": "Only one external reference is required for",
+    "options": [
+      "Linear linked list",
+      "Circular linked list",
+      "Double ended list",
+      "None of these"
+    ],
+    "answer": "Circular linked list"
+  },
+  {
+    "index": 444,
+    "question": "Nusrat sees her role as someone who provides direction and resources for her team then gets out of their way and lets them do their work however they think best. Nusrat uses the ________ style of leadership.",
+    "options": [
+      "autocratic",
+      "participative",
+      "democratic",
+      "laissez-faire"
+    ],
+    "answer": "laissez-faire"
+  },
+  {
+    "index": 445,
+    "question": "Non-type template parameters provide the ability to pass what type of data at compile time",
+    "options": [
+      "int",
+      "float",
+      "constant expression",
+      "none of the mentioned"
+    ],
+    "answer": "constant expression"
+  },
+  {
+    "index": 446,
+    "question": "Non-type parameters are mainly used for specifying _____ values or any other constant value for a particular instance of a template.",
+    "options": [
+      "max and min",
+      "max or min",
+      "min",
+      "max"
+    ],
+    "answer": "max or min"
+  },
+  {
+    "index": 447,
+    "question": "Nesting of try block is …………..",
+    "options": [
+      "syntax error",
+      "possible in C++",
+      "logical error",
+      "both (a) and (c)"
+    ],
+    "answer": "possible in C++"
+  },
+  {
+    "index": 448,
+    "question": "Nesting of catch block is ……………",
+    "options": [
+      "syntax error",
+      "possible in C++",
+      "logical error",
+      "None of the above"
+    ],
+    "answer": "None of the above"
+  },
+  {
+    "index": 449,
+    "question": "Negative cash flow is one of the classification when desired rate of return is minimum by actual rate of return",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "index": 450,
+    "question": "Narrow span of control results into",
+    "options": [
+      "Tall structure",
+      "Flat structure",
+      "Mechanistic structure",
+      "All the above"
+    ],
+    "answer": "Tall structure"
+  },
+  {
+    "index": 451,
+    "question": "N Ach, N Aff and N Pow are related",
+    "options": [
+      "McClelland’s Learned Needs",
+      "ERG theory",
+      "Justice Theory",
+      "Equity theory"
+    ],
+    "answer": "McClelland’s Learned Needs"
+  },
+  {
+    "index": 452,
+    "question": "Multivalued attribute Example",
+    "options": [
+      "Student Name",
+      "Student address",
+      "Student Phone number",
+      "Student Id number"
+    ],
+    "answer": "Student Phone number"
+  },
+  {
+    "index": 453,
+    "question": "Minnesota Multi-phasic Personality Inventory (MMPI) is used to assess",
+    "options": [
+      "Attitude",
+      "Personality",
+      "Work engagement",
+      "Wellbeing"
+    ],
+    "answer": "Personality"
+  },
+  {
+    "index": 454,
+    "question": "Memory management technique in which system stores and retrieves data from secondary storage for use in main memory is called",
+    "options": [
+      "fragmentation",
+      "paging",
+      "mapping",
+      "spooling"
+    ],
+    "answer": "paging"
+  },
+  {
+    "index": 455,
+    "question": "Memory Address locations are specified using which data representation?",
+    "options": [
+      "Sign-magnitude",
+      "one`s complement",
+      "Unsigned",
+      "two`s complement"
+    ],
+    "answer": "Unsigned"
+  },
+  {
+    "index": 456,
+    "question": "McKinsky’s 7S framework doesn’t include:",
+    "options": [
+      "System",
+      "Shared value",
+      "Share holders",
+      "Staff"
+    ],
+    "answer": "Share holders"
+  },
+  {
+    "index": 457,
+    "question": "MBTI is used to measure",
+    "options": [
+      "Attitude",
+      "Behaviour",
+      "Personality",
+      "Response"
+    ],
+    "answer": "Personality"
+  },
+  {
+    "index": 458,
+    "question": "Max Weber belongs to which school of Management thought?",
+    "options": [
+      "Scientific",
+      "Administrative",
+      "Bureaucratic",
+      "Human relations"
+    ],
+    "answer": "Bureaucratic"
+  },
+  {
+    "index": 459,
+    "question": "Match the following: i. Breadth-first search a. Heap ii. Depth-first search b. Stack iii. Sorting c. Queue",
+    "options": [
+      "i-a ii-b iii-c",
+      "i-c ii-b iii-a",
+      "i-c ii-a iii-b",
+      "i-a ii-b iii-c"
+    ],
+    "answer": "i-c ii-b iii-a"
+  },
+  {
+    "index": 460,
+    "question": "Match the following elements of organisation with their characteristics A) 1. Strategic apex ----- A. Decentralised and professional bureaucracy B) 2. Techno - structure ------ B. Centralised and Simple structure C) 3. Middle line ------ C. Dominant standardisation and machine bureaucracy D) 4. Support staff ------ D. Autonomy and Divisional structure E) 5. Operating core ------- E. Mutual adjustments and machine bureaucracy",
+    "options": [
+      "1-B, 2-C, 3-D, 4-E, 5-A",
+      "1-C, 2-B, 3-E, 4-D, 5-A",
+      "1-E, 2-C, 3-B, 4-A, 5-D",
+      "1-B, 2-A, 3-E, 4-C, 5-D"
+    ],
+    "answer": "1-B, 2-C, 3-D, 4-E, 5-A"
+  },
+  {
+    "index": 461,
+    "question": "Management as a process refers to __________",
+    "options": [
+      "Group of managers",
+      "Functions of management",
+      "Subject of management",
+      "All of these"
+    ],
+    "answer": "Functions of management"
+  },
+  {
+    "index": 462,
+    "question": "Management as a Noun refers to __________",
+    "options": [
+      "Group of managers",
+      "Functions of management",
+      "Subject of management",
+      "All of these"
+    ],
+    "answer": "Group of managers"
+  },
+  {
+    "index": 463,
+    "question": "Magnetic tape is a",
+    "options": [
+      "serial access medium",
+      "Random access medium",
+      "A parallel access medium",
+      "NONE"
+    ],
+    "answer": "serial access medium"
+  },
+  {
+    "index": 464,
+    "question": "LSD stands for ________________",
+    "options": [
+      "Lean Software Development",
+      "Live Software Development",
+      "Less Software Data",
+      "Least Software Data loss"
+    ],
+    "answer": "Lean Software Development"
+  },
+  {
+    "index": 465,
+    "question": "Lower and upper limits are present in which chart ?",
+    "options": [
+      "Run chart",
+      "Bar chart",
+      "Control chart",
+      "None of the mentioned"
+    ],
+    "answer": "Control chart"
+  },
+  {
+    "index": 466,
+    "question": "Logical memory is broken into blocks of the same size called ________",
+    "options": [
+      "frames",
+      "pages",
+      "backing store",
+      "registers"
+    ],
+    "answer": "pages"
+  },
+  {
+    "index": 467,
+    "question": "Linked list uses",
+    "options": [
+      "Random memory allocation",
+      "Static memory allocation",
+      "Fixed memory allocation",
+      "Dynamic memory allocation"
+    ],
+    "answer": "Dynamic memory allocation"
+  },
+  {
+    "index": 468,
+    "question": "Like normal parameters, we can specify _____arguments to templates.",
+    "options": [
+      "Default",
+      "Function",
+      "Class",
+      "None"
+    ],
+    "answer": "Default"
+  },
+  {
+    "index": 469,
+    "question": "Let w be a string and separated by three variable m, n, and o as per pumping lemma for regular language. What does these variables represent?",
+    "options": [
+      "string",
+      "string count",
+      "string and string count",
+      "none"
+    ],
+    "answer": "string"
+  },
+  {
+    "index": 470,
+    "question": "Let the initial value of count be 5. What will be the final value of count if the instructions are executed in the following order: S1;T1;S2;T2;S3;T3. Process P0: { S1: register1=count; S2: register1=register1 - 5 S3: count=register1 } Process P1: { T1: register2=count; T2: register2=register2 X 5 T3: count=register2 }",
+    "options": [
+      "50",
+      "25",
+      "10",
+      "0"
+    ],
+    "answer": "25"
+  },
+  {
+    "index": 471,
+    "question": "Let the initial value of count be 10. What will be the final value of count if the instructions are executed in the following order: S1;T1;S2;T2;S3;T3. Process P0: { S1: register1=count; S2: register1=register1 - 5 S3: count=register1 } Process P1: { T1: register2=count; T2: register2=register2 X 5 T3: count=register2 }",
+    "options": [
+      "50",
+      "20",
+      "10",
+      "1"
+    ],
+    "answer": "50"
+  },
+  {
+    "index": 472,
+    "question": "Let int arr[4]={0,1,2,3}. Which of the following are valid operations? I. arr++ II. ++arr III. arr+4 IV. arr*4",
+    "options": [
+      "a. I and II",
+      "a. III",
+      "a. IV",
+      "a. All"
+    ],
+    "answer": "a. III"
+  },
+  {
+    "index": 473,
+    "question": "Legitimate power is based on the subordinate's perception that the leader has a right to exercise influence because of the leader’s",
+    "options": [
+      "role or position within the organisation.",
+      "expertise and knowledge.",
+      "personal characteristics and personality.",
+      "ability to punish or reward."
+    ],
+    "answer": "role or position within the organisation."
+  },
+  {
+    "index": 474,
+    "question": "Left linear grammars are ...... of CFG",
+    "options": [
+      "Power set",
+      "Sub set",
+      "Super set",
+      "Nullable"
+    ],
+    "answer": "Sub set"
+  },
+  {
+    "index": 475,
+    "question": "Lean philosophy regards everything not adding value to the customer as __________",
+    "options": [
+      "Unnecessary",
+      "Waste",
+      "Useful",
+      "Necessary"
+    ],
+    "answer": "Waste"
+  },
+  {
+    "index": 476,
+    "question": "Lean Development follows the principle of ______________",
+    "options": [
+      "Decide as late as possible",
+      "Deliver as late as possible",
+      "Decide as early as possible",
+      "Not building integrity"
+    ],
+    "answer": "Decide as late as possible"
+  },
+  {
+    "index": 477,
+    "question": "Leadership is the process whose important ingredient is the _____________ exercised by the leaders on the group members.",
+    "options": [
+      "friendship",
+      "loyalty",
+      "trust",
+      "influence"
+    ],
+    "answer": "influence"
+  },
+  {
+    "index": 478,
+    "question": "Leadership has a lot of characteristics, and a leader must not maintain this trait in his behaviour:",
+    "options": [
+      "co-existence",
+      "taking responsibility",
+      "avoiding responsibility",
+      "All the other answers are correct"
+    ],
+    "answer": "avoiding responsibility"
+  },
+  {
+    "index": 479,
+    "question": "Leaders that focus on the individuality and personality needs of their employees and emphasize building good interpersonal relationships are:",
+    "options": [
+      "job-centred",
+      "laissez-faire",
+      "employee-oriented",
+      "task-oriented"
+    ],
+    "answer": "employee-oriented"
+  },
+  {
+    "index": 480,
+    "question": "Leaders that focus on production and the job’s technical aspects are:",
+    "options": [
+      "job-centred",
+      "laissez-faire",
+      "general",
+      "autocratic"
+    ],
+    "answer": "job-centred"
+  },
+  {
+    "index": 481,
+    "question": "Lakshan sends an encrypted message to Ruhan but it is intercepted by Tanish. Tanish cannot read it but forwards it on to Ruhan from an anonymous address she controls. Which precept of the CIA Triad would have been violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authentication"
+    ],
+    "answer": "Authentication"
+  },
+  {
+    "index": 482,
+    "question": "Keerthana solicits input from her subordinates before making decisions that will affect them. She often praises them for good work and gently offers suggestions to improve their performance. Keerthana uses the ________ style of leadership.",
+    "options": [
+      "autocratic",
+      "participative",
+      "democratic",
+      "supportive"
+    ],
+    "answer": "participative"
+  },
+  {
+    "index": 483,
+    "question": "Kalam Enterprises recently fired two employees who were caught stealing tools from the firm's warehouse. As a result, the CEO of Kalam wants to strengthen the firm's ethical culture and prevent future violations by redesigning the firm's ethics program. Which of the following questions is the LEAST relevant when developing Kalam's new ethics program?",
+    "options": [
+      "What behaviour is expected of Kalam employees?",
+      "What is the opinion of stakeholders regarding Kalam's ethics?",
+      "How are ethical situations communicated and resolved at Kalam?",
+      "What is the process for Kalam establishing a corporate giving program?"
+    ],
+    "answer": "What is the process for Kalam establishing a corporate giving program?"
+  },
+  {
+    "index": 484,
+    "question": "Josephus problem is a best example of",
+    "options": [
+      "Singly linked list",
+      "Doubly linked list",
+      "Circular linked list",
+      "All of these"
+    ],
+    "answer": "Circular linked list"
+  },
+  {
+    "index": 485,
+    "question": "It is through ______________ that group members can be inspired, motivated, and guided to be successful and productive.",
+    "options": [
+      "fellowship",
+      "sportsmanship",
+      "coercion",
+      "leadership"
+    ],
+    "answer": "leadership"
+  },
+  {
+    "index": 486,
+    "question": "It is possible to use more than one generic data type in a class template, and each generic data type is separated by the ___.",
+    "options": [
+      ".",
+      ", (Comma)",
+      ";",
+      "\"\""
+    ],
+    "answer": ", (Comma)"
+  },
+  {
+    "index": 487,
+    "question": "It is often difficult to estimate size at an early stage in a project when only a specification is available",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "index": 488,
+    "question": "it is necessary for a programming language that it must support all these_____ features completely to become a pure Object-Oriented Language.",
+    "options": [
+      "encapsulation, inheritance, and polymorphism",
+      "encapsulation and polymorphism",
+      "Inheritance, and polymorphism",
+      "Encapsulation and inheritance"
+    ],
+    "answer": "encapsulation, inheritance, and polymorphism"
+  },
+  {
+    "index": 489,
+    "question": "is a placeholder name which will be determined when the class is instantiated.",
+    "options": [
+      "Ttype",
+      "type",
+      "Type",
+      "None"
+    ],
+    "answer": "Type"
+  },
+  {
+    "index": 490,
+    "question": "Internal premises in planning doesn’t include",
+    "options": [
+      "Money",
+      "Materials",
+      "Machines",
+      "Competitors strategy"
+    ],
+    "answer": "Competitors strategy"
+  },
+  {
+    "index": 491,
+    "question": "Interaction Diagram",
+    "options": [
+      "class + Object",
+      "state + Activity",
+      "component + Deployment",
+      "Sequence + collaboration"
+    ],
+    "answer": "Sequence + collaboration"
+  },
+  {
+    "index": 492,
+    "question": "int main(){fork();fork();fork();fork();exit(0);printf(“hello”);}How many “hello” messages will be printed if the following program is executed?",
+    "options": [
+      "16",
+      "8",
+      "4",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "index": 493,
+    "question": "Institute of Electrical and Electronics Engineers (IEEE) is the largest international professional group. What are the standards developed by this organization?",
+    "options": [
+      "Computing, communication, electrical engineering, and electronics",
+      "Communication, electrical engineering, and electronics",
+      "Electrical engineering and electronics",
+      "Electrical engineering and computing"
+    ],
+    "answer": "Computing, communication, electrical engineering, and electronics"
+  },
+  {
+    "index": 494,
+    "question": "Information security is the protection of data. Information will be protected mainly based on",
+    "options": [
+      "Its sensitivity to the company",
+      "Its confidentiality",
+      "Its value",
+      "All the above"
+    ],
+    "answer": "All the above"
+  },
+  {
+    "index": 495,
+    "question": "Independent testers are _____________ and identify different defects at the same time.",
+    "options": [
+      "Isolated",
+      "Biased",
+      "Unbiased",
+      "Modular"
+    ],
+    "answer": "Unbiased"
+  },
+  {
+    "index": 496,
+    "question": "In working with his employees, Rahman involves them in decision making and encourages them to participate in deciding their work methods and goals. Rahman’s leadership style can best be described as ________.",
+    "options": [
+      "autocratic",
+      "laissez-faire",
+      "democratic",
+      "participative"
+    ],
+    "answer": "democratic"
+  },
+  {
+    "index": 497,
+    "question": "In which cache organization, index field is not required during block identification",
+    "options": [
+      "Direct mapping",
+      "set associative",
+      "2-way associative",
+      "fully associative"
+    ],
+    "answer": "fully associative"
+  },
+  {
+    "index": 498,
+    "question": "In which attack, text messages (other than email) are used for hacking personal information?",
+    "options": [
+      "Phishing",
+      "Moshing",
+      "Vishing",
+      "Smishing"
+    ],
+    "answer": "Smishing"
+  },
+  {
+    "index": 499,
+    "question": "In which attack, phone calls are used for hacking personal information?",
+    "options": [
+      "Phishing",
+      "Moshing",
+      "Vishing",
+      "Smishing"
+    ],
+    "answer": "Vishing"
+  },
+  {
+    "index": 500,
+    "question": "In which attack, email is used for hacking personal information?",
+    "options": [
+      "Phishing",
+      "Moshing",
+      "Vishing",
+      "Smishing"
+    ],
+    "answer": "Phishing"
+  },
+  {
+    "index": 501,
+    "question": "In this type of culture the behaviour of individuals are shaped by tradition, loyalty, personal commitment, extensive socialization and self-management",
+    "options": [
+      "Clan",
+      "Market",
+      "Entrepreneurial",
+      "Bureaucratic"
+    ],
+    "answer": "Clan"
+  },
+  {
+    "index": 502,
+    "question": "In this type of topology data travels only in one direction",
+    "options": [
+      "Bus",
+      "Ring",
+      "Star",
+      "Mesh"
+    ],
+    "answer": "Ring"
+  },
+  {
+    "index": 503,
+    "question": "In the segment table the segment base contains the ____________",
+    "options": [
+      "starting logical address of the process",
+      "starting physical address of the segment in the memory",
+      "segment offset",
+      "segment length"
+    ],
+    "answer": "starting physical address of the segment in the memory"
+  },
+  {
+    "index": 504,
+    "question": "In the linked list, each node contains a minimum of two fields. One field is the data field to store the data second field is?",
+    "options": [
+      "Pointer to character",
+      "Pointer to integer",
+      "Pointer to node",
+      "Node"
+    ],
+    "answer": "Pointer to node"
+  },
+  {
+    "index": 505,
+    "question": "In the graph traversing, Stack is useful for which searching algorithm?",
+    "options": [
+      "Depth first search",
+      "Breadth first search",
+      "In-order search",
+      "Pre-order search"
+    ],
+    "answer": "Depth first search"
+  },
+  {
+    "index": 506,
+    "question": "In the below function “factorial”, all automatic variables are stored in\n#include <stdio.h>\nint factorial(int i) {\nif(i <= 1) {\nreturn 1;\n}\nreturn i * factorial(i - 1);\n}\nmain() {\nprintf(\"%d\",factorial(5));\n}",
+    "options": [
+      "Array",
+      "Register",
+      "Stack",
+      "Queue"
+    ],
+    "answer": "Stack"
+  },
+  {
+    "index": 507,
+    "question": "In synchronous TDM, for n signal sources of the same data rate, each frame contains _______ slots.",
+    "options": [
+      "n + 1",
+      "n - 1",
+      "0 to n",
+      "n"
+    ],
+    "answer": "n"
+  },
+  {
+    "index": 508,
+    "question": "In segmentation technique, each address is specified by ____________",
+    "options": [
+      "an offset and value",
+      "a value and segment number",
+      "a key and value",
+      "a segment number and offset"
+    ],
+    "answer": "a segment number and offset"
+  },
+  {
+    "index": 509,
+    "question": "In regular language pumping lemma, w= mn^io belongs to L then i ranges from?",
+    "options": [
+      "i>=0",
+      "i<=0",
+      "i>=1",
+      "i<0"
+    ],
+    "answer": "i>=0"
+  },
+  {
+    "index": 510,
+    "question": "In Mintzberg’s management roles, the role that evaluate the performance of managers in different functions is called",
+    "options": [
+      "Liaison",
+      "Figurehead",
+      "Monitor",
+      "Disseminator"
+    ],
+    "answer": "Monitor"
   }
 ]
