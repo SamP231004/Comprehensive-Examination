@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizQuestion } from './components/QuizQuestion';
 import { QuizResults } from './components/QuizResults';
+import { SocialLinks } from './components/SocialLinks';
 import { Question, QuizState } from './types/quiz';
 import questionsData from './data/questions.json';
 
@@ -109,21 +110,27 @@ function App() {
 
   if (!quizState.isQuizStarted) {
     return (
-      <QuizSetup
-        totalQuestions={allQuestions.length}
-        onStartQuiz={handleStartQuiz}
-      />
+      <>
+        <QuizSetup
+          totalQuestions={allQuestions.length}
+          onStartQuiz={handleStartQuiz}
+        />
+        <SocialLinks />
+      </>
     );
   }
 
   if (quizState.isQuizCompleted) {
     return (
-      <QuizResults
-        questions={quizState.questions}
-        answers={quizState.answers}
-        onRestart={handleRestart}
-        onBackToSetup={handleBackToSetup}
-      />
+      <>
+        <QuizResults
+          questions={quizState.questions}
+          answers={quizState.answers}
+          onRestart={handleRestart}
+          onBackToSetup={handleBackToSetup}
+        />
+        <SocialLinks />
+      </>
     );
   }
 
@@ -131,19 +138,22 @@ function App() {
   const selectedAnswer = quizState.answers[currentQuestion.index];
 
   return (
-    <QuizQuestion
-      question={currentQuestion}
-      currentIndex={quizState.currentQuestionIndex}
-      totalQuestions={quizState.questions.length}
-      selectedAnswer={selectedAnswer}
-      onAnswerSelect={handleAnswerSelect}
-      onPrevious={handlePrevious}
-      onNext={handleNext}
-      onFinish={handleFinishQuiz}
-      canGoPrevious={quizState.currentQuestionIndex > 0}
-      canGoNext={quizState.currentQuestionIndex < quizState.questions.length - 1}
-      isLastQuestion={quizState.currentQuestionIndex === quizState.questions.length - 1}
-    />
+    <>
+      <QuizQuestion
+        question={currentQuestion}
+        currentIndex={quizState.currentQuestionIndex}
+        totalQuestions={quizState.questions.length}
+        selectedAnswer={selectedAnswer}
+        onAnswerSelect={handleAnswerSelect}
+        onPrevious={handlePrevious}
+        onNext={handleNext}
+        onFinish={handleFinishQuiz}
+        canGoPrevious={quizState.currentQuestionIndex > 0}
+        canGoNext={quizState.currentQuestionIndex < quizState.questions.length - 1}
+        isLastQuestion={quizState.currentQuestionIndex === quizState.questions.length - 1}
+      />
+      <SocialLinks />
+    </>
   );
 }
 

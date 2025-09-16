@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight, Clock, Target } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, Target, Flag } from 'lucide-react';
 import { Question } from '../types/quiz';
 
 interface QuizQuestionProps {
@@ -31,6 +31,17 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 }) => {
   const progress = ((currentIndex + 1) / totalQuestions) * 100;
 
+  // Jumble options for display
+  const jumbledOptions = React.useMemo(() => {
+    const options = [...question.options];
+    // Simple shuffle algorithm using question index as seed for consistency
+    const seed = question.index;
+    for (let i = options.length - 1; i > 0; i--) {
+      const j = Math.floor(((seed * (i + 1)) % 1000) / 1000 * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    return options;
+  }, [question.options, question.index]);
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-4xl">
@@ -68,7 +79,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
           {/* Options */}
           <div className="space-y-3 mb-8">
-            {question.options.map((option, index) => (
+            {jumbledOptions.map((option, index) => (
               <button
                 key={index}
                 onClick={() => onAnswerSelect(option)}
@@ -105,8 +116,17 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
               Previous
             </button>
 
-            <div className="text-sm text-gray-500">
-              {selectedAnswer ? 'Answer selected' : 'Select an answer'}
+            <div className="flex items-center gap-4">
+              <div className="text-sm text-gray-500">
+                {selectedAnswer ? 'Answer selected' : 'Select an answer'}
+              </div>
+              <button
+                onClick={onFinish}
+                className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-colors"
+              >
+                <Flag className="w-4 h-4" />
+                Finish Quiz
+              </button>
             </div>
 
             {isLastQuestion ? (

@@ -17,6 +17,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
 }) => {
   const totalQuestions = questions.length;
   const correctAnswers = questions.filter(q => answers[q.index] === q.answer).length;
+  const attemptedQuestions = Object.keys(answers).length;
   const percentage = Math.round((correctAnswers / totalQuestions) * 100);
   
   const getScoreColor = (percentage: number) => {
@@ -53,8 +54,11 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                 <div className="text-gray-700 mb-4">
                   <span className="font-semibold">{correctAnswers}</span> out of{' '}
                   <span className="font-semibold">{totalQuestions}</span> questions correct
+                  <div className="text-sm text-gray-500 mt-1">
+                    ({attemptedQuestions} questions attempted)
+                  </div>
                 </div>
-                <div className="flex justify-center gap-8">
+                <div className="flex justify-center gap-6">
                   <div className="text-center">
                     <div className="flex items-center justify-center gap-1 text-green-600">
                       <CheckCircle className="w-4 h-4" />
@@ -65,9 +69,16 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                   <div className="text-center">
                     <div className="flex items-center justify-center gap-1 text-red-600">
                       <XCircle className="w-4 h-4" />
-                      <span className="font-semibold">{totalQuestions - correctAnswers}</span>
+                      <span className="font-semibold">{attemptedQuestions - correctAnswers}</span>
                     </div>
                     <div className="text-xs text-gray-500">Incorrect</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="flex items-center justify-center gap-1 text-gray-600">
+                      <span className="w-4 h-4 text-center font-bold">—</span>
+                      <span className="font-semibold">{totalQuestions - attemptedQuestions}</span>
+                    </div>
+                    <div className="text-xs text-gray-500">Skipped</div>
                   </div>
                 </div>
               </div>
