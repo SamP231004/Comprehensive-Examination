@@ -5,6 +5,7 @@ import { Question } from '../types/quiz';
 interface QuizResultsProps {
   questions: Question[];
   answers: Record<number, string>;
+  scoreRecord: Record<number, boolean>;
   onRestart: () => void;
   onBackToSetup: () => void;
 }
@@ -12,12 +13,13 @@ interface QuizResultsProps {
 export const QuizResults: React.FC<QuizResultsProps> = ({
   questions,
   answers,
+  scoreRecord,
   onRestart,
   onBackToSetup,
 }) => {
   const totalQuestions = questions.length;
-  const correctAnswers = questions.filter(q => answers[q.index] === q.answer).length;
-  const attemptedQuestions = Object.keys(answers).length;
+  const correctAnswers = Object.values(scoreRecord).filter(Boolean).length;
+  const attemptedQuestions = Object.keys(scoreRecord).length;
   const percentage = Math.round((correctAnswers / totalQuestions) * 100);
 
   const getScoreColor = (percentage: number) => {
@@ -113,14 +115,15 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
           <div className="p-6 space-y-6">
             {questions.map((question, index) => {
               const userAnswer = answers[question.index];
-              const isCorrect = userAnswer === question.answer;
+              const wasCorrect = scoreRecord[question.index] === true;
 
               return (
                 <div key={question.index} className="border border-gray-200 rounded-lg p-6">
                   <div className="flex items-start gap-3 mb-4">
                     <div
-                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                        }`}
+                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                        wasCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                      }`}
                     >
                       {index + 1}
                     </div>
@@ -130,8 +133,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                       </h3>
 
                       <div className="space-y-2">
-                        {/* If answered correctly → only show the correct option */}
-                        {isCorrect && (
+                        {wasCorrect && (
                           <div className="p-3 rounded-lg border border-green-300 bg-green-50 text-green-800">
                             <div className="flex items-center justify-between">
                               <span>{question.answer}</span>
@@ -140,8 +142,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                           </div>
                         )}
 
-                        {/* If answered wrong → show wrong in red + correct in green */}
-                        {!isCorrect && userAnswer && (
+                        {!wasCorrect && userAnswer && (
                           <>
                             <div className="p-3 rounded-lg border border-red-300 bg-red-50 text-red-800">
                               <div className="flex items-center justify-between">
@@ -158,7 +159,6 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                           </>
                         )}
 
-                        {/* If skipped */}
                         {!userAnswer && (
                           <div className="mt-3 p-3 bg-gray-100 rounded-lg text-gray-600 text-sm">
                             No answer selected
@@ -170,7 +170,6 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                 </div>
               );
             })}
-
           </div>
         </div>
       </div>

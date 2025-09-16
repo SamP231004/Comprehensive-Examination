@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizQuestion } from './components/QuizQuestion';
 import { QuizResults } from './components/QuizResults';
@@ -18,10 +18,13 @@ function App() {
   });
 
   const [allQuestions] = useState<Question[]>(questionsData);
+  const [questionQueue, setQuestionQueue] = useState<Question[]>([]);
+  const [attemptKey, setAttemptKey] = useState(0);
+  const [scoreRecord, setScoreRecord] = useState<Record<number, boolean>>({});
 
   const handleStartQuiz = (startQuestion: number, endQuestion: number) => {
     const selectedQuestions = allQuestions.filter(
-      q => q.index >= startQuestion && q.index <= endQuestion
+      (q) => q.index >= startQuestion && q.index <= endQuestion
     );
 
     setQuizState({
@@ -33,22 +36,45 @@ function App() {
       isQuizStarted: true,
       isQuizCompleted: false,
     });
+
+    setQuestionQueue([...selectedQuestions]);
+    setAttemptKey(0);
+    setScoreRecord({});
   };
 
   const handleAnswerSelect = (answer: string) => {
-    const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
-    setQuizState(prev => ({
+    const currentQuestion = questionQueue[quizState.currentQuestionIndex];
+    const isCorrect = answer === currentQuestion.answer;
+
+    setQuizState((prev) => ({
       ...prev,
       answers: {
         ...prev.answers,
         [currentQuestion.index]: answer,
       },
     }));
+
+    if (!(currentQuestion.index in scoreRecord)) {
+      setScoreRecord((prev) => ({
+        ...prev,
+        [currentQuestion.index]: isCorrect,
+      }));
+    }
+
+    if (!isCorrect) {
+      const insertPos = Math.min(
+        quizState.currentQuestionIndex + 3,
+        questionQueue.length
+      );
+      const newQueue = [...questionQueue];
+      newQueue.splice(insertPos, 0, currentQuestion);
+      setQuestionQueue(newQueue);
+    }
   };
 
   const handlePrevious = () => {
     if (quizState.currentQuestionIndex > 0) {
-      setQuizState(prev => ({
+      setQuizState((prev) => ({
         ...prev,
         currentQuestionIndex: prev.currentQuestionIndex - 1,
       }));
@@ -56,8 +82,21 @@ function App() {
   };
 
   const handleNext = () => {
-    if (quizState.currentQuestionIndex < quizState.questions.length - 1) {
-      setQuizState(prev => ({
+    const currentQuestion = questionQueue[quizState.currentQuestionIndex];
+    const userAnswer = quizState.answers[currentQuestion.index];
+    const isCorrect = userAnswer === currentQuestion.answer;
+
+    if (!isCorrect && userAnswer) {
+      setQuizState((prev) => {
+        const newAnswers = { ...prev.answers };
+        delete newAnswers[currentQuestion.index];
+        return { ...prev, answers: newAnswers };
+      });
+      setAttemptKey((prev) => prev + 1);
+    }
+
+    if (quizState.currentQuestionIndex < questionQueue.length - 1) {
+      setQuizState((prev) => ({
         ...prev,
         currentQuestionIndex: prev.currentQuestionIndex + 1,
       }));
@@ -65,19 +104,22 @@ function App() {
   };
 
   const handleFinishQuiz = () => {
-    setQuizState(prev => ({
+    setQuizState((prev) => ({
       ...prev,
       isQuizCompleted: true,
     }));
   };
 
   const handleRestart = () => {
-    setQuizState(prev => ({
+    setQuizState((prev) => ({
       ...prev,
       currentQuestionIndex: 0,
       answers: {},
       isQuizCompleted: false,
     }));
+    setQuestionQueue([]);
+    setAttemptKey(0);
+    setScoreRecord({});
   };
 
   const handleBackToSetup = () => {
@@ -90,23 +132,28 @@ function App() {
       isQuizStarted: false,
       isQuizCompleted: false,
     });
+    setQuestionQueue([]);
+    setAttemptKey(0);
+    setScoreRecord({});
   };
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (!quizState.isQuizStarted || quizState.isQuizCompleted) return;
 
       if (e.key === 'ArrowLeft' && quizState.currentQuestionIndex > 0) {
         handlePrevious();
-      } else if (e.key === 'ArrowRight' && quizState.currentQuestionIndex < quizState.questions.length - 1) {
+      } else if (
+        e.key === 'ArrowRight' &&
+        quizState.currentQuestionIndex < questionQueue.length - 1
+      ) {
         handleNext();
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [quizState]);
+  }, [quizState, questionQueue]);
 
   if (!quizState.isQuizStarted) {
     return (
@@ -126,6 +173,7 @@ function App() {
         <QuizResults
           questions={quizState.questions}
           answers={quizState.answers}
+          scoreRecord={scoreRecord}
           onRestart={handleRestart}
           onBackToSetup={handleBackToSetup}
         />
@@ -134,23 +182,24 @@ function App() {
     );
   }
 
-  const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
+  const currentQuestion = questionQueue[quizState.currentQuestionIndex];
   const selectedAnswer = quizState.answers[currentQuestion.index];
 
   return (
     <>
       <QuizQuestion
+        key={`${currentQuestion.index}-${attemptKey}`}
         question={currentQuestion}
         currentIndex={quizState.currentQuestionIndex}
-        totalQuestions={quizState.questions.length}
+        totalQuestions={questionQueue.length}
         selectedAnswer={selectedAnswer}
         onAnswerSelect={handleAnswerSelect}
         onPrevious={handlePrevious}
         onNext={handleNext}
         onFinish={handleFinishQuiz}
         canGoPrevious={quizState.currentQuestionIndex > 0}
-        canGoNext={quizState.currentQuestionIndex < quizState.questions.length - 1}
-        isLastQuestion={quizState.currentQuestionIndex === quizState.questions.length - 1}
+        canGoNext={quizState.currentQuestionIndex < questionQueue.length - 1}
+        isLastQuestion={quizState.currentQuestionIndex === questionQueue.length - 1}
       />
       <SocialLinks />
     </>
