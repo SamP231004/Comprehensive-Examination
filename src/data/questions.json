@@ -1,0 +1,112 @@
+[
+  {
+    "index": 1,
+    "question": "Within an organisation, leadership influence will be dependent upon the type of ________ that the leader can exercise over the followers.",
+    "options": [
+      "knowledge",
+      "power",
+      "delegation",
+      "friendship"
+    ],
+    "answer": "power"
+  },
+  {
+    "index": 2,
+    "question": "What is the primary purpose of strategic planning in business?",
+    "options": [
+      "To increase short-term profits",
+      "To set long-term goals and direction",
+      "To manage daily operations",
+      "To hire new employees"
+    ],
+    "answer": "To set long-term goals and direction"
+  },
+  {
+    "index": 3,
+    "question": "Which of the following is NOT a characteristic of effective teamwork?",
+    "options": [
+      "Clear communication",
+      "Shared goals",
+      "Individual competition",
+      "Mutual respect"
+    ],
+    "answer": "Individual competition"
+  },
+  {
+    "index": 4,
+    "question": "What does ROI stand for in business?",
+    "options": [
+      "Return on Investment",
+      "Rate of Interest",
+      "Revenue over Income",
+      "Risk of Investment"
+    ],
+    "answer": "Return on Investment"
+  },
+  {
+    "index": 5,
+    "question": "Which management style involves employees in decision-making processes?",
+    "options": [
+      "Autocratic",
+      "Democratic",
+      "Laissez-faire",
+      "Bureaucratic"
+    ],
+    "answer": "Democratic"
+  },
+  {
+    "index": 6,
+    "question": "What is the primary goal of project management?",
+    "options": [
+      "To maximize profits",
+      "To deliver projects on time, within budget, and scope",
+      "To minimize workforce",
+      "To increase market share"
+    ],
+    "answer": "To deliver projects on time, within budget, and scope"
+  },
+  {
+    "index": 7,
+    "question": "Which of the following is a key component of emotional intelligence?",
+    "options": [
+      "Technical skills",
+      "Self-awareness",
+      "Mathematical ability",
+      "Physical fitness"
+    ],
+    "answer": "Self-awareness"
+  },
+  {
+    "index": 8,
+    "question": "What is the main purpose of SWOT analysis?",
+    "options": [
+      "To analyze financial statements",
+      "To evaluate Strengths, Weaknesses, Opportunities, and Threats",
+      "To manage human resources",
+      "To design products"
+    ],
+    "answer": "To evaluate Strengths, Weaknesses, Opportunities, and Threats"
+  },
+  {
+    "index": 9,
+    "question": "Which communication method is most effective for complex information?",
+    "options": [
+      "Email",
+      "Text message",
+      "Face-to-face discussion",
+      "Social media post"
+    ],
+    "answer": "Face-to-face discussion"
+  },
+  {
+    "index": 10,
+    "question": "What is the primary benefit of diversity in the workplace?",
+    "options": [
+      "Reduced operational costs",
+      "Enhanced creativity and innovation",
+      "Simplified management",
+      "Uniform thinking"
+    ],
+    "answer": "Enhanced creativity and innovation"
+  }
+]
