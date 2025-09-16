@@ -14895,5 +14895,423 @@
       "none of the above"
     ],
     "answer": "relvar"
+  },
+  {
+    "index": 1358,
+    "question": "___ operates on pairs of relations and is, therefore, called binary operations",
+    "options": [
+      "rename",
+      "project",
+      "Cartesian Product",
+      "none of these"
+    ],
+    "answer": "Cartesian Product"
+  },
+  {
+    "index": 1359,
+    "question": "Which of the following statement is correct?",
+    "options": [
+      "By using intersection, multiple queries can be put together and their output merged",
+      "Grouping facilitates the combination of values based on a common reference",
+      "The result of projection is the rows common to the rows produced by the individual queries.",
+      "Restrict returns rows after combining two tables."
+    ],
+    "answer": "Grouping facilitates the combination of values based on a common reference"
+  },
+  {
+    "index": 1360,
+    "question": "____ takes place at execution time",
+    "options": [
+      "Dynamic Query Optimization",
+      "non dynamic query optimization",
+      "static query optimization",
+      "all the above"
+    ],
+    "answer": "Dynamic Query Optimization"
+  },
+  {
+    "index": 1361,
+    "question": "Which of the following statement is not correct?",
+    "options": [
+      "Automatic query optimization means the DBMS finds the most cost-effective access path without user intervention.",
+      "Manual query optimization requires, that the optimization be selected and scheduled by the end user or programmer.",
+      "A statistically based query optimization algorithm uses statistical information about the database.",
+      "A role-based query optimization algorithm is based on a set of user-defined rules to determine the best query access strategy."
+    ],
+    "answer": "A role-based query optimization algorithm is based on a set of user-defined rules to determine the best query access strategy."
+  },
+  {
+    "index": 1362,
+    "question": "A ____ uses sophisticated algorithms based on statistics about the objects being accessed to determine the best approach to execute a query",
+    "options": [
+      "role based optimizer",
+      "cost based optimizer",
+      "cast- based optimizer",
+      "none of the above"
+    ],
+    "answer": "cost based optimizer"
+  },
+  {
+    "index": 1363,
+    "question": "Which of the following statement is correct?",
+    "options": [
+      "Query optimization algorithm cannot be evaluated on the basis of its operation mode or the timing of its optimization",
+      "The optimizer process organises the concurrent execution of SQL requests",
+      "Query optimization is the central activity during the parsing phase in query processing",
+      "Most SQL performance optimization techniques are not DBMS-specific and therefore are easily portable"
+    ],
+    "answer": "Query optimization is the central activity during the parsing phase in query processing"
+  },
+  {
+    "index": 1364,
+    "question": "__ consists of selecting a strategy from a list of candidates that is closest to optimal",
+    "options": [
+      "Global Query Optimization",
+      "query mapping",
+      "local query optimization",
+      "none of the above"
+    ],
+    "answer": "Global Query Optimization"
+  },
+  {
+    "index": 1365,
+    "question": "Which of the following statement is not correct?",
+    "options": [
+      "A drawback of cost-based optimization is the cost of optimization itself",
+      "Generation of expressions is only part of the query-optimization process since each operation in the expression can be implemented with different algorithms.",
+      "The commutavity and associativity of join operations are important for join reordering in query optimization",
+      "Query optimization cannot be performed by treating materialized views just like regular relations"
+    ],
+    "answer": "Query optimization cannot be performed by treating materialized views just like regular relations"
+  },
+  {
+    "index": 1366,
+    "question": "Complex queries may have subexpressions repeated in different parts of the query, which can be similarly exploited to reduce query evaluation cost. Such optimization is known as ____",
+    "options": [
+      "Multiquery Optimization",
+      "universal query optimization",
+      "subquery optimization",
+      "none of the above"
+    ],
+    "answer": "Multiquery Optimization"
+  },
+  {
+    "index": 1367,
+    "question": "In ____, a query is optimized without being provided specific values for its parameters.",
+    "options": [
+      "non - Parametric Query Optimization.",
+      "Parametric Query Optimization.",
+      "heuristic Query Optimization.",
+      "none of the above"
+    ],
+    "answer": "Parametric Query Optimization."
+  },
+  {
+    "index": 1368,
+    "question": "The activity of choosing an efficient execution strategy for processing a query is known as",
+    "options": [
+      "query processing",
+      "localization",
+      "procedural access",
+      "Query Optimization"
+    ],
+    "answer": "Query Optimization"
+  },
+  {
+    "index": 1369,
+    "question": "__ is based on constraints specified on the database schema to reduce the search space",
+    "options": [
+      "heuristic Query Optimization.",
+      "query decomposition",
+      "Semantic query optimization",
+      "none of the above"
+    ],
+    "answer": "Semantic query optimization"
+  },
+  {
+    "index": 1370,
+    "question": "___ ensures that the data moves from one consistent state to another; this activity includes the synchronization of local and remote transactions as well as transactions across multiple distributed segments",
+    "options": [
+      "concurrency control",
+      "Transaction Management",
+      "transformation",
+      "query optimization"
+    ],
+    "answer": "Transaction Management"
+  },
+  {
+    "index": 1371,
+    "question": "Which of the following is correct?",
+    "options": [
+      "A database request is not an equivalent program or transaction.",
+      "a transaction is a logical unit of work that must be either entirely completed or aborted; intermediate states are acceptable.",
+      "A consistent database state is one in which all data integrity constraints are satisfied.",
+      "ensures that once transaction changes are done and committed, they cannot be undone or lost, even in the event of a system failure."
+    ],
+    "answer": "A consistent database state is one in which all data integrity constraints are satisfied."
+  },
+  {
+    "index": 1372,
+    "question": "Ensures that once the changes are commited, they cannot be undone or lost, even in the event of a system failure",
+    "options": [
+      "Durability",
+      "Consistency",
+      "Atomicity",
+      "None of the above"
+    ],
+    "answer": "Durability"
+  },
+  {
+    "index": 1373,
+    "question": "A _________ statement is reached, in which case all changes are aborted and the database must be restored to its previous consistent state.",
+    "options": [
+      "COMMIT",
+      "ROLLBACK",
+      "UPDATE",
+      "None of the above"
+    ],
+    "answer": "ROLLBACK"
+  },
+  {
+    "index": 1374,
+    "question": "Which of the following statement is not correct?",
+    "options": [
+      "Serializability ensures that the schedule for the concurrent execution of the transactions yields consistent results",
+      "Serializability ensures that the schedule transactions yields inconsistent results.",
+      "A DBMS uses a transaction log to keep track of all transactions that update the database.",
+      "Isolation means that the data used during the execution of a transaction cannot be used by a second transaction until the first one is completed."
+    ],
+    "answer": "Serializability ensures that the schedule transactions yields inconsistent results."
+  },
+  {
+    "index": 1375,
+    "question": "Information residing in__________ does not usually survive system crashes.",
+    "options": [
+      "Volatile storage",
+      "non volative",
+      "stable storage",
+      "none of the above"
+    ],
+    "answer": "Volatile storage"
+  },
+  {
+    "index": 1376,
+    "question": "Which of the following statements is not correct?",
+    "options": [
+      "A transaction is partially committed, after the final statement has been executed.",
+      "A transaction is committed, after the final statement has been executed.",
+      "A transaction is failed, after the discovery that normal execution can no longer proceed.",
+      "A transaction is aborted, after the transaction has been rolled back and the database has been restored to its state prior to the start of the transaction."
+    ],
+    "answer": "A transaction is committed, after the final statement has been executed."
+  },
+  {
+    "index": 1377,
+    "question": "The DBMS component that ensures atomicity and durability is",
+    "options": [
+      "lock manager",
+      "file manager",
+      "Recovery manager",
+      "acess manager"
+    ],
+    "answer": "Recovery manager"
+  },
+  {
+    "index": 1378,
+    "question": "In a DBMS transaction subsystem, _____ is responsible for the efficient transfer of data between disk storage and main memory",
+    "options": [
+      "buffer manager",
+      "schedular",
+      "system manager",
+      "none"
+    ],
+    "answer": "buffer manager"
+  },
+  {
+    "index": 1379,
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Any non-executable set of transactions is known as a schedule.",
+      "If we execute the transactions strictly in a sequence, one at a time, then the schedule is called a interleaved schedule",
+      "If there is an overlap of transactions, then the schedule is called serial schedule.",
+      "It is the responsibility of both the DBMS and the application developers to ensure consistency."
+    ],
+    "answer": "It is the responsibility of both the DBMS and the application developers to ensure consistency."
+  },
+  {
+    "index": 1380,
+    "question": "Context-sensitive languages (CSLs) are closed under i) Union ii) intersection iii) complementation iv) concatenation",
+    "options": [
+      "(i) and (iii) only",
+      "(ii) and (iv) only",
+      "(i), (ii) and (iii) only",
+      "(i), (ii) , (iii) and (iv)"
+    ],
+    "answer": "(i), (ii) , (iii) and (iv)"
+  },
+  {
+    "index": 1381,
+    "question": "Let L1’ be a recursive language and let L2’ be a recursively enumerable language which is not recursive. Which one of the following is TRUE?",
+    "options": [
+      "L1 is recursive, L2 is recursively enumerable",
+      "L1 is recursively enumerable and L2 is recursive",
+      "L1 is recursive, L2 is not recursively enumerable",
+      "L1 and L2 are recursively enumerable"
+    ],
+    "answer": "L1 is recursive, L2 is not recursively enumerable"
+  },
+  {
+    "index": 1382,
+    "question": "The complement of the universal language Lu’ is",
+    "options": [
+      "Recursively enumerable",
+      "Not recursively enumerable",
+      "Recursively enumerable but not recursive",
+      "Recursive"
+    ],
+    "answer": "Not recursively enumerable"
+  },
+  {
+    "index": 1383,
+    "question": "The complement of the diagonal language L’ is",
+    "options": [
+      "Recursively enumerable",
+      "Not recursively enumerable",
+      "Recursively enumerable but not recursive",
+      "Recursive"
+    ],
+    "answer": "Recursively enumerable but not recursive"
+  },
+  {
+    "index": 1384,
+    "question": "The following grammar G=(N, T, P, S), where N=(S, A, B, C, D, E), T ={a,b,c} P= {S→ABCD, BCD → DE, D→aD, D→a, E→bE} is of",
+    "options": [
+      "Type 3",
+      "Type 2 but not of type 3",
+      "Type 1 but not of type 2",
+      "Type 0 but not of type 1"
+    ],
+    "answer": "Type 0 but not of type 1"
+  },
+  {
+    "index": 1385,
+    "question": "Let L and L’ be a language and its complement. Which one of the following possibilities will not hold?",
+    "options": [
+      "L and L' are recursive",
+      "L is recursively enumerable but not recursive L' is not recursively enumerable.",
+      "L and L' are not recursively enumerable",
+      "L and L' are recursively enumerable but not recursive."
+    ],
+    "answer": "L and L' are recursively enumerable but not recursive."
+  },
+  {
+    "index": 1386,
+    "question": "The encoding of the Turing machine with transitions δ(q1,0) = (q2, 1, R) δ(q2, 0) = (q3,0, R) δ(q3, B)= (q2,1,L) is",
+    "options": [
+      "11101010010010011001010001010011000100010010010111",
+      "1110101001001001100101001010011000100010010010111",
+      "1110101001001001100101000101001100010001001010111",
+      "111010100100100110010100010100110010010010010111"
+    ],
+    "answer": null
+  },
+  {
+    "index": 1387,
+    "question": "Let L1 be a regular language and L2 a deterministic CFL, L3 is recursively enumerable but not recursive. Which one of the following statements is FALSE?",
+    "options": [
+      "L1∩L2 is a DCFL",
+      "L3∩L1 is recursive",
+      "L1 U L2 is context-free",
+      "L1∩L2∩L3 is recursively enumerable"
+    ],
+    "answer": "L1∩L2 is a DCFL"
+  },
+  {
+    "index": 1388,
+    "question": "Which one of the following is the strongest correct statement about a finite language L over a finite alphabet Σ?",
+    "options": [
+      "L is undecidable",
+      "L is recursive",
+      "L is a CSL",
+      "L is a regular set"
+    ],
+    "answer": "L is a regular set"
+  },
+  {
+    "index": 1389,
+    "question": "Which of the following propositions is true?",
+    "options": [
+      "For all A ⸦ Σ*, if A is regular, then so is cycle A.",
+      "For all A ⸦ Σ *, if A is regular, then so is permute A.",
+      "For all A ⸦ Σ *, if A is context-free, then so is cycle A.",
+      "For all A ⸦ Σ *, if A is context-free, then so is permute A."
+    ],
+    "answer": "For all A ⸦ Σ*, if A is regular, then so is cycle A."
+  },
+  {
+    "index": 1390,
+    "question": "Consider the following statements: I) Recursive languages are closed under complementation II) Recursive enumerable languages are closed under union III) Recursive enumerable languages are closed under complementation Which of the above statements are TRUE?",
+    "options": [
+      "I only",
+      "I and II",
+      "I and III",
+      "II and III"
+    ],
+    "answer": "I and II"
+  },
+  {
+    "index": 1391,
+    "question": "Consider a language L for which there exists a Turing machine (TM), T, that accepts every word in L and either rejects or loops for every word that is not in L. The language is",
+    "options": [
+      "NP hard",
+      "NP complete",
+      "Recursive",
+      "Recursively enumerable"
+    ],
+    "answer": "Recursively enumerable"
+  },
+  {
+    "index": 1392,
+    "question": "Consider the languages L₁= {a^n.b^m.c^m / n, m≥1} and L₂= {a^n.b^n.c^m / n,m ≥1 } Which one of the following statements is TRUE?",
+    "options": [
+      "L1 U L2 is a CSL",
+      "L1 ∩ L2 is a CFL",
+      "L1 and L2 are CSL",
+      "L1 ∩ L2 is a CSL"
+    ],
+    "answer": "L1 ∩ L2 is a CSL"
+  },
+  {
+    "index": 1393,
+    "question": "A context-free language L = {wwR / w∈{a,c}* can be accepted by",
+    "options": [
+      "DPDA",
+      "NPDA",
+      "DFA",
+      "NFA"
+    ],
+    "answer": "NPDA"
+  },
+  {
+    "index": 1394,
+    "question": "Which of the following languages over {a,b,c} is deterministic PDA?",
+    "options": [
+      "{ wbwR / w ∈{a, c}* }",
+      "{ wwR / w ∈{a, b, c}* }",
+      "{ an bn cn / n ≥ 1 }",
+      "{ w / w is a palindrome over {a, b, c} }"
+    ],
+    "answer": "{ wbwR / w ∈{a, c}* }"
+  },
+  {
+    "index": 1395,
+    "question": "Which of the following languages over {a,b,c} is deterministic PDA?",
+    "options": [
+      "{ wbwR / w ∈{a, c}* }",
+      "{ wwR / w ∈{a, b, c}* }",
+      "{ an bn cn / n ≥ 1 }",
+      "{ w / w is a palindrome over {a, b, c} }"
+    ],
+    "answer": "{ wbwR / w ∈{a, c}* }"
   }
 ]
