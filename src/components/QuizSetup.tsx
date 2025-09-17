@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Play, Settings } from 'lucide-react';
+import { Play, Settings, Book } from 'lucide-react';
 
 interface QuizSetupProps {
   totalQuestions: number;
   onStartQuiz: (startQuestion: number, endQuestion: number) => void;
+  onOpenQuestionBank: () => void;
 }
 
-export const QuizSetup: React.FC<QuizSetupProps> = ({ totalQuestions, onStartQuiz }) => {
+export const QuizSetup: React.FC<QuizSetupProps> = ({ totalQuestions, onStartQuiz, onOpenQuestionBank }) => {
   const [startQuestion, setStartQuestion] = useState(1);
   const [endQuestion, setEndQuestion] = useState(Math.min(5, totalQuestions));
   const [useSlider, setUseSlider] = useState(true);
@@ -36,6 +37,16 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ totalQuestions, onStartQui
         </div>
 
         <div className="space-y-6">
+          <div className="flex justify-center">
+            <button
+              onClick={onOpenQuestionBank}
+              className="flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors"
+            >
+              <Book className="w-5 h-5" />
+              Browse Question Bank
+            </button>
+          </div>
+
           <div className="bg-blue-50 rounded-lg p-4">
             <p className="text-blue-800 font-medium">
               Total Questions Available: <span className="font-bold">{totalQuestions}</span>

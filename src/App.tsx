@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizQuestion } from './components/QuizQuestion';
 import { QuizResults } from './components/QuizResults';
+import { QuestionBank } from './components/QuestionBank';
 import { SocialLinks } from './components/SocialLinks';
 import { Question, QuizState } from './types/quiz';
 import questionsData from './data/questions.json';
 
 function App() {
+  const [showQuestionBank, setShowQuestionBank] = useState(false);
   const [quizState, setQuizState] = useState<QuizState>({
     questions: [],
     currentQuestionIndex: 0,
@@ -137,6 +139,19 @@ function App() {
     setScoreRecord({});
   };
 
+  const handleOpenQuestionBank = () => {
+    setShowQuestionBank(true);
+  };
+
+  const handleBackFromQuestionBank = () => {
+    setShowQuestionBank(false);
+  };
+
+  const handleStartQuizFromBank = (startQuestion: number, endQuestion: number) => {
+    setShowQuestionBank(false);
+    handleStartQuiz(startQuestion, endQuestion);
+  };
+
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (!quizState.isQuizStarted || quizState.isQuizCompleted) return;
@@ -155,12 +170,25 @@ function App() {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [quizState, questionQueue]);
 
+  if (showQuestionBank) {
+    return (
+      <>
+        <QuestionBank
+          questions={allQuestions}
+          onBack={handleBackFromQuestionBank}
+        />
+        <SocialLinks />
+      </>
+    );
+  }
+
   if (!quizState.isQuizStarted) {
     return (
       <>
         <QuizSetup
           totalQuestions={allQuestions.length}
           onStartQuiz={handleStartQuiz}
+          onOpenQuestionBank={handleOpenQuestionBank}
         />
         <SocialLinks />
       </>
