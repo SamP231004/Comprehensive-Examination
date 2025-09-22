@@ -459,7 +459,7 @@
       "0*1010*",
       "0*1*01"
     ],
-    "answer": "0*(1(1*0)*0)*"
+    "answer": "0*(10+1)*"
   },
   {
     "index": 43,
@@ -470,7 +470,7 @@
       "0*(10+1)*",
       "0*1*01"
     ],
-    "answer": "0*(1(1*0)*0)*"
+    "answer": "0*(10+1)*"
   },
   {
     "index": 44,
@@ -8993,7 +8993,7 @@
       "100111001",
       "100111001110"
     ],
-    "answer": null
+    "answer": "100110111001"
   },
   {
     "index": 821,
@@ -11585,18 +11585,18 @@
       "31,39",
       "56, 64"
     ],
-    "answer": null
+    "answer": "30, 39"
   },
   {
     "index": 1057,
     "question": "To read a character and echo the character on to screen , with out the need to press enter key, appropriate function is",
     "options": [
       "getchecho()",
-      "getch()",
+      "getche()",
       "getchar()",
       "getcharecho()"
     ],
-    "answer": null
+    "answer": "getche()"
   },
   {
     "index": 1058,
@@ -11805,7 +11805,7 @@
       "pl ∈ (lr, hr)",
       "pl dom hr"
     ],
-    "answer": null
+    "answer": "pl ∈ (lr, hr)"
   },
   {
     "index": 1077,
@@ -14399,7 +14399,7 @@
       "Register addressing",
       "Stack addressing"
     ],
-    "answer": null
+    "answer": "Stack addressing"
   },
   {
     "index": 1313,
@@ -14454,7 +14454,7 @@
       "Both",
       "None"
     ],
-    "answer": null
+    "answer": "Rotate carry"
   },
   {
     "index": 1318,
@@ -15213,7 +15213,7 @@
       "1110101001001001100101000101001100010001001010111",
       "111010100100100110010100010100110010010010010111"
     ],
-    "answer": null
+    "answer": "1110101001001001100101000101001100010001001010111"
   },
   {
     "index": 1387,
