@@ -1306,7 +1306,7 @@
       "insertion = selection",
       "insertion <= selection"
     ],
-    "answer": "insertion > selection"
+    "answer": "insertion < selection"
   },
   {
     "index": 120,
