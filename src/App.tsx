@@ -44,6 +44,36 @@ function App() {
     setScoreRecord({});
   };
 
+  const handleStartRandomQuiz = (count: number, startRange?: number, endRange?: number) => {
+    let questionPool = allQuestions;
+    
+    // If range is specified, filter questions to that range
+    if (startRange && endRange) {
+      questionPool = allQuestions.filter(
+        (q) => q.index >= startRange && q.index <= endRange
+      );
+    }
+    
+    // Create a shuffled copy of the question pool
+    const shuffledQuestions = [...questionPool].sort(() => Math.random() - 0.5);
+    // Take the first 'count' questions
+    const selectedQuestions = shuffledQuestions.slice(0, count);
+
+    setQuizState({
+      questions: selectedQuestions,
+      currentQuestionIndex: 0,
+      answers: {},
+      startQuestion: 1,
+      endQuestion: count,
+      isQuizStarted: true,
+      isQuizCompleted: false,
+    });
+
+    setQuestionQueue([...selectedQuestions]);
+    setAttemptKey(0);
+    setScoreRecord({});
+  };
+
   const handleAnswerSelect = (answer: string) => {
     const currentQuestion = questionQueue[quizState.currentQuestionIndex];
     const isCorrect = answer === currentQuestion.answer;
@@ -188,6 +218,7 @@ function App() {
         <QuizSetup
           totalQuestions={allQuestions.length}
           onStartQuiz={handleStartQuiz}
+          onStartRandomQuiz={handleStartRandomQuiz}
           onOpenQuestionBank={handleOpenQuestionBank}
         />
         <SocialLinks />
@@ -212,6 +243,21 @@ function App() {
 
   const currentQuestion = questionQueue[quizState.currentQuestionIndex];
   const selectedAnswer = quizState.answers[currentQuestion.index];
+
+  // Defensive check: if currentQuestion is undefined, return to setup
+  if (!currentQuestion) {
+    return (
+      <>
+        <QuizSetup
+          totalQuestions={allQuestions.length}
+          onStartQuiz={handleStartQuiz}
+          onStartRandomQuiz={handleStartRandomQuiz}
+          onOpenQuestionBank={handleOpenQuestionBank}
+        />
+        <SocialLinks />
+      </>
+    );
+  }
 
   return (
     <>
