@@ -2846,7 +2846,7 @@
       "unity of direction.",
       "esprit de corps."
     ],
-    "answer": "chain of command."
+    "answer": "unity of direction."
   },
   {
     "index": 260,
@@ -3553,7 +3553,7 @@
       "Backtracking",
       "Branch & Bound 0/1"
     ],
-    "answer": "Dynamic 0 / 1"
+    "answer": "Branch & Bound 0/1"
   },
   {
     "index": 325,
@@ -4132,7 +4132,7 @@
       "External level",
       "None of these"
     ],
-    "answer": "Conceptual level"
+    "answer": "Physical level"
   },
   {
     "index": 378,
