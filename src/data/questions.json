@@ -13202,7 +13202,7 @@
       "Q x Σ --> 2^Q-1",
       "Q x Σ U {epsilon}--> 2^Q"
     ],
-    "answer": "Q x Σ --> 2^Q"
+    "answer": "Q x Σ U {epsilon}--> 2^Q"
   },
   {
     "index": 1204,
