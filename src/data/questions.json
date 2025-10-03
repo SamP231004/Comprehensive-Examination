@@ -9895,7 +9895,7 @@
       "h = O(n)",
       "h = O(log n)"
     ],
-    "answer": "h = O(log n)"
+    "answer": "h = O(n)"
   },
   {
     "index": 903,
