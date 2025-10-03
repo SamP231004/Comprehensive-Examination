@@ -8729,7 +8729,7 @@
       "is a regular language",
       "is not a deterministic CFL but a CFL."
     ],
-    "answer": "is not a deterministic CFL but a CFL."
+    "answer": "is recursive and is a deterministic CFL"
   },
   {
     "index": 797,
