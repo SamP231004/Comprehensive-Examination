@@ -14135,7 +14135,7 @@
       "L is not context free",
       "L is regular"
     ],
-    "answer": "L is regular"
+    "answer": "L is regular but not 0"
   },
   {
     "index": 1289,
