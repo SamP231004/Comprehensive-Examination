@@ -9268,7 +9268,7 @@
       "Centralized Bus arbitration is similar to Priority interrupt circuit.",
       "None of the mentioned options."
     ],
-    "answer": "Centralized Bus arbitration involves both Processor and DMA controller for its processing."
+    "answer": "In centralized BUS arbitration, the processor takes into account the various parameters and assigns the BUS to that device"
   },
   {
     "index": 846,
