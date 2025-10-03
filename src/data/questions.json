@@ -7378,7 +7378,7 @@
       "{ba^nc|n>=1}",
       "{w|w is a string of a,b,c}"
     ],
-    "answer": "{ba^nc|n>=0}"
+    "answer": "{ba^nc|n>=1}"
   },
   {
     "index": 674,
