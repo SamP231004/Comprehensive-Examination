@@ -13153,12 +13153,12 @@
     "index": 1199,
     "question": "Which of the following relations is correct, when comparing the worst-case complexity?",
     "options": [
-      "insertion < selection < quick < merge",
-      "insertion < quick < selection < merge",
-      "insertion = selection < merge < quick",
-      "insertion = selection < quick = merge"
+      "insertion = quick < selection",
+      "insertion = quick = selection",
+      "insertion < quick < selection",
+      "none of the above"
     ],
-    "answer": "insertion = selection < merge < quick"
+    "answer": "insertion = quick = selection"
   },
   {
     "index": 1200,
