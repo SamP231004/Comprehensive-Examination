@@ -6377,7 +6377,7 @@
       "First Fit",
       "All the given choices."
     ],
-    "answer": "Worst Fit"
+    "answer": "All the given choices."
   },
   {
     "index": 583,
@@ -6388,7 +6388,7 @@
       "First Fit",
       "All the given choices."
     ],
-    "answer": "First Fit"
+    "answer": "Best Fit"
   },
   {
     "index": 584,
