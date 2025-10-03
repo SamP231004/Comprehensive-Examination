@@ -6093,18 +6093,18 @@
       "5,4",
       "5,1"
     ],
-    "answer": "5,3"
+    "answer": "5,4"
   },
   {
     "index": 557,
     "question": "How many “SCOPE”s are printed?, how many “SCOPE”s are printed by only child processes?\nint main()\n{\nif(fork() && fork())\nfork();\nprintf(\"SCOPE\");\n}",
     "options": [
       "5,2",
-      "5,3",
+      "4,3",
       "5,4",
       "5,1"
     ],
-    "answer": "5,4"
+    "answer": "4,3"
   },
   {
     "index": 558,
