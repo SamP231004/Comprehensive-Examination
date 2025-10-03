@@ -6465,7 +6465,7 @@
       "ambiguous grammar, ambiguous grammar",
       "un ambiguous grammar, un ambiguous grammar"
     ],
-    "answer": "ambiguous grammar, un ambiguous grammar"
+    "answer": "un ambiguous grammar, ambiguous grammar"
   },
   {
     "index": 591,
