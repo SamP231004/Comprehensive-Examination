@@ -6927,7 +6927,7 @@
       "the time taken by the desired sector of disk to rotate into a position so that it can access the read/write heads.",
       "the time taken to complete the execution."
     ],
-    "answer": "the average of time spent by a request waiting to perform its I/O operation."
+    "answer": "the time taken to complete the execution."
   },
   {
     "index": 633,
