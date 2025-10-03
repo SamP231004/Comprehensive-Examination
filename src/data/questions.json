@@ -11580,12 +11580,12 @@
     "index": 1056,
     "question": "What is ascii value for 0 and 9",
     "options": [
-      "30, 39",
+      "48, 57",
       "31, 40",
       "31,39",
       "56, 64"
     ],
-    "answer": "30, 39"
+    "answer": "48, 57"
   },
   {
     "index": 1057,
