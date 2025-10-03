@@ -31,13 +31,17 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 }) => {
   const progress = ((currentIndex + 1) / totalQuestions) * 100;
 
-  // Jumble options for display
-  const jumbledOptions = React.useMemo(() => {
+  // Randomize options for display using Fisher-Yates shuffle
+  const randomizedOptions = React.useMemo(() => {
     const options = [...question.options];
-    // Simple shuffle algorithm using question index as seed for consistency
+    // Use question index as seed for consistent randomization per question
     const seed = question.index;
+    let random = seed;
+    
     for (let i = options.length - 1; i > 0; i--) {
-      const j = Math.floor(((seed * (i + 1)) % 1000) / 1000 * (i + 1));
+      // Simple seeded random number generator
+      random = (random * 9301 + 49297) % 233280;
+      const j = Math.floor((random / 233280) * (i + 1));
       [options[i], options[j]] = [options[j], options[i]];
     }
     return options;
@@ -80,7 +84,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
           {/* Options */}
           <div className="space-y-3 mb-8">
-            {jumbledOptions.map((option, index) => {
+            {randomizedOptions.map((option, index) => {
               const isSelected = selectedAnswer === option;
               const isCorrect = option === question.answer;
               const isWrongSelected = isSelected && !isCorrect;
