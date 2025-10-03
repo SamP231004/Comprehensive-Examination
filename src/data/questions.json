@@ -13345,7 +13345,7 @@
       "Even if the mid point is known, it cannot find whether the second half matches the first",
       "All of the mentioned"
     ],
-    "answer": "Finite automata cannot remember arbitarily large amount of data"
+    "answer": "All of the mentioned"
   },
   {
     "index": 1217,
