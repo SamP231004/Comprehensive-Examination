@@ -9466,7 +9466,7 @@
       "Interrupt nesting",
       "None of the mentioned options"
     ],
-    "answer": "Interrupt nesting"
+    "answer": "Vectored interrupts"
   },
   {
     "index": 864,
